@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "332b8624741841dc04cb360bb6716d13",
+    "revision": "b210ea938c9f50170b3fbeca71ed5a3b",
     "url": "/cribe-client/index.html"
   },
   {
-    "revision": "109c7101adb4cfde38b1",
+    "revision": "6e66993a9f9125abd881",
     "url": "/cribe-client/static/css/main.972ca87a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cribe-client/static/js/2.4cf98ddf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "109c7101adb4cfde38b1",
-    "url": "/cribe-client/static/js/main.9eb6d3c6.chunk.js"
+    "revision": "6e66993a9f9125abd881",
+    "url": "/cribe-client/static/js/main.d8c8f7cb.chunk.js"
   },
   {
     "revision": "98454a0f5cee15f7a47a",

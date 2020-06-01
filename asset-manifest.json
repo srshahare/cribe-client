@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cribe-client/static/css/main.972ca87a.chunk.css",
-    "main.js": "/cribe-client/static/js/main.9eb6d3c6.chunk.js",
-    "main.js.map": "/cribe-client/static/js/main.9eb6d3c6.chunk.js.map",
+    "main.js": "/cribe-client/static/js/main.d8c8f7cb.chunk.js",
+    "main.js.map": "/cribe-client/static/js/main.d8c8f7cb.chunk.js.map",
     "runtime-main.js": "/cribe-client/static/js/runtime-main.21a5328b.js",
     "runtime-main.js.map": "/cribe-client/static/js/runtime-main.21a5328b.js.map",
     "static/js/2.4cf98ddf.chunk.js": "/cribe-client/static/js/2.4cf98ddf.chunk.js",
     "static/js/2.4cf98ddf.chunk.js.map": "/cribe-client/static/js/2.4cf98ddf.chunk.js.map",
     "index.html": "/cribe-client/index.html",
-    "precache-manifest.b53fda1a04d9bc84340369716320304f.js": "/cribe-client/precache-manifest.b53fda1a04d9bc84340369716320304f.js",
+    "precache-manifest.c448bdd6a82f76afcf6d21335a6fc7c2.js": "/cribe-client/precache-manifest.c448bdd6a82f76afcf6d21335a6fc7c2.js",
     "service-worker.js": "/cribe-client/service-worker.js",
     "static/css/main.972ca87a.chunk.css.map": "/cribe-client/static/css/main.972ca87a.chunk.css.map",
     "static/js/2.4cf98ddf.chunk.js.LICENSE.txt": "/cribe-client/static/js/2.4cf98ddf.chunk.js.LICENSE.txt",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.21a5328b.js",
     "static/js/2.4cf98ddf.chunk.js",
     "static/css/main.972ca87a.chunk.css",
-    "static/js/main.9eb6d3c6.chunk.js"
+    "static/js/main.d8c8f7cb.chunk.js"
   ]
 }
