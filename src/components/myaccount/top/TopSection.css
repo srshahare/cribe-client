@@ -1,0 +1,76 @@
+@import url('../../../assets/Colors.css');
+
+.AccountSection{
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.AccountSection .ProfileImgDiv{
+    position: relative;
+    margin-right: 3rem;
+}
+
+.AccountSection .ProfileImg{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 5px 8px rgba(0,0,0,.1);
+}
+
+.AccountSection .PremiumBadge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4px;
+}
+
+.AccountSection .AccountDetails .AccountName{
+    width: 100%;
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+}
+
+.AccountSection .AccountDetails span{
+    font-weight: 500;
+    color: var(--optionColor);
+}
+
+.AccountSection .AccountDetails h2{
+    font-weight: 300;
+}
+.AccountSection .AccountDetails p{
+    color: var(--optionColor);
+}
+
+.AccountSection a{
+    padding: 0 1rem;
+    border: none;
+    background: var(--accentColor);
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.AccountSection .AccountDetails{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+.AccountSection .AccountDetails .UserBio{
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--paraColor);
+}
+
+.AccountSection .AccountDetails .JoiningText{
+    color: var(--optionColor);
+}

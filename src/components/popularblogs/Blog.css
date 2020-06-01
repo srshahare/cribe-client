@@ -1,0 +1,110 @@
+.PopularBlogs{
+    margin: 8px;
+}
+
+.PopularBlogs img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.PopularBlogs .EndBox{
+    margin-top: 8px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.PopularBlogs .EndBox .OptionBox{
+    display: flex;
+    align-items: center;
+}
+
+.PopularBlogs .Context {
+    margin-top: 8px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.PopularBlogs .Context h3{
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--textColor);
+}
+
+.PopularBlogs .Context p{
+    font-size: 1rem;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+    color: var(--paraColor);
+    margin-top: 8px;
+}
+
+.PopularBlogs .Context .EndBox p{
+    font-size: .8rem;
+    color: var(--optionColor);
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.PopularBlogs .Context .EndBox span{
+    color: var(--themeColorDark);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* 
+bloglist css */
+.PopularBlogsList{
+    margin-top: 4rem;
+
+}
+.PopularBlogsList .PopularList{
+    display: flex;
+}
+.PopularBlogsList h4{
+    text-align: left;
+    color: var(--textColor);
+    padding-left: 8px;
+}
+
+
+@media only screen and (max-width: 450px){
+    .PopularBlogsList{
+        margin-top: 0;
+        margin-right: 8px;
+    }
+    .PopularBlogsList h4{
+        margin: 0;
+        padding: 8px;
+    }
+    .PopularBlogsList .PopularList{
+        display: flex;
+        overflow-y: scroll;
+    }
+
+    .PopularBlogs img{
+        height: 150px;
+        width: 200px;
+        object-fit: cover;
+    }
+
+    .PopularList::-webkit-scrollbar{
+        display: none;
+    }
+
+    .PopularList{
+        -ms-overflow-style: none;
+    }
+}

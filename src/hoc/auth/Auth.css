@@ -1,0 +1,53 @@
+.AuthCont{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.AuthCont .BackDrop{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    background: rgba(255,255,255,.8);
+    filter: blur(32px);
+    z-index: 500;
+}
+
+.AuthCont .AuthBox{
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
+    /* animation: scaleDrop .3s forwards; */
+    border: 1px solid #ddd;
+    background: white;
+    position: absolute;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    z-index: 1000;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+.AuthBox::-webkit-scrollbar{
+    display: none;
+}
+.AuthBox{
+    -ms-overflow-style: none;
+}
+
+@keyframes scaleDrop {
+    from {
+        transform: scale(.5);
+        height: 0;
+    }
+    to {
+        transform: scale(1);
+        height: 100%;
+    }
+  }

@@ -1,0 +1,29 @@
+@import url("../../assets//Colors.css");
+
+.SelectionCont{
+
+}
+
+.SelectionCont .CloseIcon{
+    position: absolute;
+    margin: 1rem;
+    left: 0;
+    top: 0;
+    cursor: pointer;   
+    z-index: 5; 
+}
+
+.SelectionCont button{
+    padding: 12px 2rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+    background: var(--accentColor);
+    outline: none;
+}
+.SelectionCont button:hover{
+    box-shadow: 0 5px 8px rgba(63, 210, 199, .3);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}

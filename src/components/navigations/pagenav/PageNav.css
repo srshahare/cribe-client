@@ -1,0 +1,97 @@
+@import url("../../../assets//Colors.css");
+
+.PageNav{
+    width: 100%;
+}
+
+.PageNav .NavContext{
+    display: flex;
+    padding: 8px 8rem;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+.PageNav .ItemsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PageNav .ItemsContainer .NotiIcon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.PageNav .ItemsContainer .Profile{
+    width: 30px;
+    height: 30px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.PageNav .ItemsContainer .SearchBox{
+    padding: 6px 1rem;
+    border: 1px solid #eee;
+    background: transparent;
+    color: white;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 8rem;
+}
+
+.PageNav .ItemsContainer .SearchIcon{
+    padding: 5px;
+    border-radius: 8rem;
+    background: #eee;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.PageNav .dropbtn{
+    display: none;
+}
+
+.PageNav img{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+
+.PageNav .TopicsNavList{
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    position: sticky;
+    top: 0;
+}
+
+@media only screen and (max-width: 450px){
+    .PageNav .NavContext{
+        padding: 8px 0;
+    }
+    .PageNav img{
+        width: 75px;
+        height: auto;
+        object-fit: contain;
+        margin: 0 1rem;
+    }
+    .PageNav .ItemsContainer{
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 500;
+    }
+    .PageNav .dropbtn{
+        display: inline-block;
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+    .show {display:block;}
+}

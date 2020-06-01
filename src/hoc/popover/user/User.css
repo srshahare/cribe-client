@@ -1,0 +1,40 @@
+@import url('../../../assets//Colors.css');
+
+.UserPopover{
+}
+
+.UserPopover .CreatorContent{
+    display: flex;
+    align-items: initial;
+}
+
+.UserPopover .CreatorContent img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 8rem;
+    margin-right: 1rem;
+}
+
+.UserPopover .CreatorContent h5{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.UserPopover .CreatorContent p{
+    color: var(--textColor);
+    margin: 0;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.UserPopover .UserBio{
+    font-size: .8rem;
+    padding-top: 8px;
+    color: var(--paraColor);
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+

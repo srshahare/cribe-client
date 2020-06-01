@@ -1,0 +1,33 @@
+@import url('../../../assets//Colors.css');
+
+.HashtagBottomSection{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.HashtagBottomSection .Options{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.HashtagBottomSection .Options button{
+    margin: 0;
+    color: var(--paraColor);
+    padding: 8px 1rem;
+    border: 1px solid transparent;
+    border-width: 0 0 1px 0;
+    outline: none;
+    background: white;
+    cursor: pointer;
+}
+
+.HashtagBottomSection .Options .active{
+    border: 1px solid #000;
+    border-width: 0 0 1px 0;
+    color: var(--textColor);
+}
+
+.HashtagBottomSection hr{
+    margin: 0;
+}

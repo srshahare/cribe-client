@@ -1,0 +1,113 @@
+@import url("../../assets//Colors.css");
+
+.LandingComp .SecondSection{
+    padding: 4rem 8rem;
+    text-align: center;   
+    position: relative;
+}
+
+.warn{
+    width: 100%;
+    height: 900px;
+    border-radius: 0 0 40rem 40rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -5;
+    background: linear-gradient(to top, rgb(153, 221, 255, .1), rgb(153, 221, 255, .01))
+}
+
+.LandingComp .SecondSection h1{
+    text-align: center;
+    color: var(--textColor);
+} 
+
+.LandingComp .SecondSection .Items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.LandingComp .SecondSection .Item{
+    text-align: left;
+    flex: 1;
+    margin: 1rem;
+}
+.LandingComp .SecondSection .Item .One{
+    background: #7752BE;
+    display: inline-block;
+    padding: 8px 1rem;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 8px 1rem rgba(119, 82, 190, .4);
+}
+.LandingComp .SecondSection .Item .Two{
+    background: #FAB005;
+    display: inline-block;
+    padding: 8px 1rem;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 8px 1rem rgba(250, 176, 5, .4);
+}
+.LandingComp .SecondSection .Item .Three{
+    background: #F03E3D;
+    display: inline-block;
+    padding: 8px 1rem;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 8px 1rem rgb(240, 62, 61, .4);
+}
+.LandingComp .SecondSection .Item .Four{
+    background: #4DADF7;
+    display: inline-block;
+    padding: 8px 1rem;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 8px 1rem rgba(77, 173, 247, .4);
+}
+
+.LandingComp .SecondSection button{
+    margin-top: 2rem;
+    border: none;
+    position: relative;
+    outline: none;
+    z-index: 10;
+    padding: 12px 2rem;
+    background: var(--accentColor);
+    color: white;
+    border-radius: 4px;
+}
+
+.LandingComp .SecondSection button:hover{
+    box-shadow: 0 5px 8px rgba(63, 210, 199, .3);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 450px){
+    .LandingComp .SecondSection{
+        padding: 4rem 0;
+        text-align: center;   
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        align-items: initial;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .LandingComp .SecondSection .Items{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .LandingComp .SecondSection h1{
+        text-align: left;
+        color: var(--textColor);
+    } 
+    .LandingComp .SecondSection .Item{
+        text-align: left;
+        flex: 1;
+        margin: 0;
+    }
+}

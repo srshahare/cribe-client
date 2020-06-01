@@ -1,0 +1,144 @@
+@import url('../../../assets//Colors.css');
+
+.PageBottomBox{
+    margin: 2rem 8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+}
+.PageBottomBox p{
+    text-align: left;
+    margin: 0;
+    padding: 0 8px;
+}
+.PageBottomBox h2{
+    text-align: left;
+    margin: 0;
+    padding: 0 8px;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--textColor);
+}
+
+.PageBottomBox button{
+    border: none;
+    background: var(--accentColor);
+    padding: 8px 1rem;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.PageBottomBox .FirstSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PageBottomBox .FirstSection button{
+    padding: 8px 2rem;
+    width: 60%;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: var(--accentColor);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.PageBottomBox .FirstSection img{
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+}
+
+.PageBottomBox .FirstSection .OptionBox{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.PageBottomBox .FirstSection .OptionBox img{
+    width: 35px;
+    height: 35px;
+    margin: 0 4px;
+    padding: 0;
+}
+
+.PageBottomBox .SecondSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    width: 70%;
+}
+
+.PageBottomBox .SecondSection h3,
+.PageBottomBox .SecondSection p{
+    text-align: left;
+    margin: 0;
+    color: var(--paraColor);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 0;
+}
+
+.PageBottomBox .SecondSection h3{
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+}
+
+.PageBottomBox .SecondSection img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8rem;
+}
+
+.PageBottomBox .SecondSection .CreatorInfo{
+    margin: 0 1rem;
+}
+
+
+.PageBottomBox .ThirdSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    width: 70%;
+}
+
+.PageBottomBox .ThirdSection h3,
+.PageBottomBox .ThirdSection p{
+    text-align: left;
+    margin: 0;
+    color: var(--paraColor);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 0;
+}
+
+.PageBottomBox .ThirdSection h3{
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+}
+
+.PageBottomBox .ThirdSection img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.PageBottomBox .ThirdSection .CreatorInfo{
+    margin: 0 1rem;
+}
+

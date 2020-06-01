@@ -1,0 +1,118 @@
+.HashtagCont{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.HashtagCont img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    animation: fadeIn .5s forwards;
+}
+
+.HashtagCont h2{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.HashtagCont .BackDrop{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    background: rgba(255,255,255,.8);
+    filter: blur(32px);
+    z-index: 500;
+}
+
+.HashtagCont .HashtagBox{
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
+    animation: fadeIn .5s forwards;
+    border: 1px solid #ddd;
+    background: white;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 1000;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+.HashtagCont .HashtagBox .HashtagInput{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HashtagCont .HashtagInput .Hashtagname{
+    width: 70%;
+    margin: 2rem auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    outline: none;
+}
+
+.HashtagCont .PublishBtn {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.HashtagCont .HashtagBox .PublishBtn button{
+    border: none;
+    background: var(--accentColor);
+    color: white;
+    padding: 8px 1rem;
+    outline: none;
+    border-radius: 4px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.HashtagCont .HashtagBox .PublishBtn a{
+    border: none;
+    background: var(--accentColor);
+    color: white;
+    padding: 8px 1rem;
+    outline: none;
+    border-radius: 4px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.HashtagBox::-webkit-scrollbar{
+    display: none;
+}
+.HashtagBox{
+    -ms-overflow-style: none;
+}
+
+@keyframes scaleDrop {
+    from {
+        transform: scale(.5);
+        height: 0;
+    }
+    to {
+        transform: scale(1);
+        height: 100%;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

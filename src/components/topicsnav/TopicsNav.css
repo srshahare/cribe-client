@@ -1,0 +1,40 @@
+.TopicsNavList{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,.05);  
+    z-index: 100;
+    padding: 8px 8rem;
+}
+
+.TopicItem p{
+    margin: 8px;
+}
+
+.TopicsNavList .AllTopics{
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.TopicsNavList img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.TopicsNavList .AllTopics::-webkit-scrollbar{
+    display: none;
+}
+.TopicsNavList .AllTopics{
+    -ms-overflow-style: none;
+}
+
+@media only screen and (max-width: 450px){
+    .TopicsNavList{
+        padding: 8px 1rem;
+    }
+}

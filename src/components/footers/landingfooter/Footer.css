@@ -1,0 +1,41 @@
+.LandingFooter{
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(245, 245, 245);
+    padding: 2rem 8rem;
+}
+
+.LandingFooter .Group{
+    flex: 1;
+}
+.LandingFooter h1{
+    text-align: left;
+}
+.LandingFooter h3{
+    font-weight: 600;
+}
+
+.LandingFooter button{
+    padding: 8px 1rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: var(--accentColor);
+    outline: none;
+}
+
+.LandingFooter button:hover{
+    box-shadow: 0 5px 8px rgba(63, 210, 199, .3);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px){
+    .LandingFooter{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        background: rgb(245, 245, 245);
+        padding: 2rem 0;
+    }
+}

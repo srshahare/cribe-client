@@ -1,0 +1,19 @@
+@import url('../../../assets//Colors.css');
+
+.BlogPageContent{
+    margin: 0 8rem;
+    margin-top: 300px;
+}
+
+.BlogPageContent .BlogContent p{
+    text-align: left;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    color: var(--textColor);
+    line-height: 2rem;
+}
+
+.BlogPageContent h3{
+    text-align: left;
+    color: var(--textColor);
+}

@@ -1,0 +1,18 @@
+.Featured{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.Featured .MobileFeatured{
+    display: none;
+}
+
+@media only screen and (max-width: 450px){
+    .Featured .MobileFeatured{
+        display: block;
+    }
+
+    .Featured .DesktopFeatured{
+        display: none;
+    }
+}

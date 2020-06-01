@@ -1,0 +1,90 @@
+@import url("../../assets//Colors.css");
+
+.LandingNav{
+    background: white;
+    height: 60px;
+    margin-top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,.05);
+    display: flex;
+    align-items: center;
+    padding: 0 8rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    justify-content: space-between;
+}
+.LandingNav .ItemsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LandingNav .dropbtn{
+    display: none;
+}
+
+.LandingNav img{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+.LandingNav button{
+    padding: 8px 1rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: var(--accentColor);
+    outline: none;
+}
+.LandingNav button:hover{
+    box-shadow: 0 5px 8px rgba(63, 210, 199, .3);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.LandingNav .ItemsContainer p{
+    margin: 0 12px;
+}
+
+.LandingNav .ItemsContainer p:hover{
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px){
+    .LandingNav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }
+    .LandingNav img{
+        width: 75px;
+        height: auto;
+        object-fit: contain;
+        margin: 0 1rem;
+    }
+    .LandingNav .ItemsContainer{
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 500;
+    }
+    .LandingNav .dropbtn{
+        display: inline-block;
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+    .show {display:block;}
+}

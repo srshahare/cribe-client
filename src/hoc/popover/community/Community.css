@@ -1,0 +1,60 @@
+@import url('../../../assets//Colors.css');
+
+.CommunityPopover{
+   
+}
+
+.CommunityPopover .PopContent{
+    animation: popAnim2 .3s forwards;
+}
+
+.CommunityPopover .CreatorContent{
+    display: flex;
+    align-items: initial;
+}
+
+.CommunityPopover .CreatorContent img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.CommunityPopover .CreatorContent h5{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.CommunityPopover .CreatorContent p{
+    color: var(--textColor);
+    margin: 0;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.CommunityPopover .CommunityBio{
+    font-size: .8rem;
+    padding-top: 8px;
+    color: var(--paraColor);
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@keyframes popAnim{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes popAnim2{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

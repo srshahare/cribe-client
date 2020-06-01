@@ -1,0 +1,226 @@
+.SignupComponent{
+    display: flex;
+    align-items: center;
+    margin: 8px auto;
+}
+
+.SignupComponent .CloseIcon{
+    position: absolute;
+    margin: 1rem;
+    left: 0;
+    top: 0;
+    cursor: pointer;   
+    z-index: 5; 
+}
+
+.SignupComponent .InputContainer{
+    width: 40%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 2rem;  
+    animation: SignupAnim .3s forwards;
+}
+
+.SignupComponent .UserNameInput{
+    border: 1px solid #ddd;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.SignupComponent .EmailInput{
+    border: 1px solid #ddd;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.SignupComponent .PassInput{
+    border: 1px solid #ddd;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.SignupComponent input{
+    border: none;
+    padding: 8px;
+    outline: none;
+    width: 85%;
+    color: black;
+}
+
+::placeholder{
+    color: #929699;
+}
+
+.SignupComponent .AccountIcon{
+    border: 1px solid #ddd;
+    border-width: 0 1px 0 0;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+}
+.SignupComponent .KeyIcon{
+    border: 1px solid #ddd;
+    border-width: 0 1px 0 0;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.SignupComponent .CheckContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SignupComponent .SignupBtn{
+    padding: 12px 16px;
+    background: #4786FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+}
+
+.SignupComponent .SignupBtn:hover{
+    box-shadow: 0 5px 8px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.SignupComponent .ForgotContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.SignupComponent p{
+    margin: 0;
+    color: #929699;
+}
+
+.SignupComponent .ForgotPara:hover{
+    cursor: pointer;
+    color: black;
+    transition: .3s ease-in-out;
+}
+
+.SignupComponent .RegisterPara{
+    color: #4786FF;
+}
+
+.SignupComponent .RegisterPara:hover{
+    cursor: pointer;
+    color: rgb(53, 105, 201);
+    transition: .3s ease-in-out;
+}
+
+.SignupComponent .OrBreak{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.SignupComponent .OrBreak .row{
+    height: .1px;
+    background: #929699;
+    width: 130px;
+    margin-top: 3px;
+}
+
+.SignupComponent .AuthOptionsContainer{
+    margin-top: 3rem;
+}
+
+.SignupComponent .AuthOptionsContainer img{
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 8px 0 0 8px;
+}
+.SignupComponent .AuthOptionsContainer .FacebookSignup{
+    background: #3B5998;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+.FacebookSignup:hover{
+    box-shadow: 0 5px 8px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.FacebookSignup img{
+    background-color: rgb(38, 63, 116);
+}
+.FacebookSignup p,
+.TwitterSignup p,
+.GoogleSignup p{
+    color: white;
+    width: 100%;
+    margin: 0;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.SignupComponent .AuthOptionsContainer .TwitterSignup{
+    background: #00ACED;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+.TwitterSignup:hover{
+    box-shadow: 0 5px 8px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.TwitterSignup img{
+    background-color: rgb(0, 136, 185);
+}
+
+.SignupComponent .AuthOptionsContainer .GoogleSignup{
+    background: #F44336;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+.GoogleSignup:hover{
+    box-shadow: 0 5px 8px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.GoogleSignup img{
+    background-color: rgb(179, 43, 33);
+}
+
+.SignupComponent .ImageContainer{
+    width: 50%;
+    height: 100%;
+    animation: SignupAnim .3s forwards;
+}
+
+.SignupComponent .ImageContainer img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes SignupAnim {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

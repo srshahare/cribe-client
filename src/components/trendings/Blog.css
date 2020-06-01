@@ -1,0 +1,85 @@
+.TrendingBlogs{
+    display: flex;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.TrendingBlogs img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.TrendingBlogs .EndBox{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 0;
+    justify-content: space-between;
+}
+
+.TrendingBlogs .EndBox .OptionBox{
+    display: flex;
+    align-items: center;
+}
+
+.TrendingBlogs .Context {
+    margin-right: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.TrendingBlogs .Context h3{
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--textColor);
+}
+
+.TrendingBlogs .Context p{
+    font-size: 1rem;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+    color: var(--paraColor);
+}
+
+.TrendingBlogs .Context .EndBox p{
+    font-size: .8rem;
+    color: var(--optionColor);
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.TrendingBlogs .Context .EndBox span{
+    color: var(--themeColorDark);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* 
+bloglist css */
+.TrendingBlogsList{
+    position: sticky;
+    top: 4rem;
+}
+
+@media only screen and (max-width: 450px){
+    .TrendingBlogsList{
+        position: relative;
+        top: 0;
+    }
+
+    .TrendingBlogs img{
+        display: none;
+    }
+}

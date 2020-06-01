@@ -1,0 +1,91 @@
+.FeatureThird{
+    position: relative;
+}
+
+.FeatureThird img{
+    height: 161px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.FeatureThird .BlackBack{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 161px;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
+
+.FeatureThird .EndBox{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.FeatureThird .EndBox .OptionBox{
+    display: flex;
+    align-items: center;
+}
+
+.FeatureThird .Context {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+    height: 100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+.FeatureThird .Context h3{
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: white;
+}
+
+.FeatureThird .Context p{
+    font-size: 1rem;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+    color: white;
+}
+
+.FeatureThird .Context .EndBox p{
+    font-size: .8rem;
+    color: var(--paraColor);
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.FeatureThird .Context .EndBox span{
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* 
+bloglist css */
+.FeatureThirdList .PromotionList{
+    display: flex;
+    flex-flow: column;
+    height: 350px;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 450px){
+    .FeatureThirdList {
+        margin-bottom: 2rem;
+    }
+}

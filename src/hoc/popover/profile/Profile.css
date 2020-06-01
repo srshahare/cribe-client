@@ -1,0 +1,61 @@
+@import url('../../../assets/Colors.css');
+
+.ProfilePopover{
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.05);
+}
+
+.ProfilePopover button{
+    outline: none;
+    border: none;
+    padding: 4px 1rem;
+    background: var(--accentColor);
+    border-radius: 4px;
+    color: white;
+    margin: 8px;
+}
+
+.ProfilePopover .ProfileTitle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px    ;
+}
+
+.ProfilePopover .ProfileTitle h6{
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.ProfilePopover .ProfileTitle p{
+    margin: 0 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--optionColor);
+}
+
+
+.ProfilePopover ul{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.ProfilePopover ul li{
+    text-align: left;
+    margin: 8px 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--optionColor);
+}
+
+a{
+    color: var(--optionColor);
+    text-decoration: none !important;
+}
+a:hover{
+    color: var(--optionColor);
+}

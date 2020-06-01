@@ -1,0 +1,79 @@
+@import url("../../assets//Colors.css");
+
+
+.LandingComp .ThirdSection .First,
+.LandingComp .ThirdSection .Second,
+.LandingComp .ThirdSection .Third{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 2rem;
+}
+
+.LandingComp .ThirdSection .LeftContainer .TagPara{
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.LandingComp .ThirdSection .LeftContainer button{
+    padding: 12px 2rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: var(--accentColor);
+    outline: none;
+}
+
+.LandingComp .ThirdSection .LeftContainer button:hover{
+    box-shadow: 0 5px 8px rgba(63, 210, 199, .3);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.LandingComp .ThirdSection .LeftContainer p{
+    width: 90%;
+    margin: 0;
+    font-size: 1.1rem;
+}
+.LandingComp .ThirdSection .LeftContainer .Title{
+    margin: 0;
+    color: var(--themeColorDark);
+    font-size: 2.5rem;
+}
+
+.LandingComp .ThirdSection .Membership{
+    margin-top: 1rem;
+}
+
+.LandingComp .ThirdSection .RightContainer img{
+    width: 500px;
+}
+
+@media only screen and (max-width: 450px){
+    .LandingComp .ThirdSection{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .LandingComp .ThirdSection .First,
+    .LandingComp .ThirdSection .Second,
+    .LandingComp .ThirdSection .Third{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: 2rem 0;
+    }
+    .LandingComp .ThirdSection .LeftContainer .Title{
+        margin: 0;
+        color: var(--themeColorDark);
+        font-size: 2rem;
+    }
+    .LandingComp .ThirdSection .RightContainer img{
+        width: 300px;
+    }
+  
+}

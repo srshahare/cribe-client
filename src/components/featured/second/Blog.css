@@ -1,0 +1,80 @@
+.FeatureSecond{
+    display: flex;
+}
+
+.FeatureSecond img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.FeatureSecond .EndBox{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.FeatureSecond .EndBox .OptionBox{
+    display: flex;
+    align-items: center;
+}
+
+.FeatureSecond .Context {
+    margin-left: 1rem;
+    height: 100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.FeatureSecond .Context h3{
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--textColor);
+}
+
+.FeatureSecond .Context p{
+    font-size: 1rem;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+    color: var(--paraColor);
+    margin-top: 8px;
+}
+
+.FeatureSecond .Context .EndBox p{
+    font-size: .8rem;
+    color: var(--optionColor);
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.FeatureSecond .Context .EndBox span{
+    color: var(--themeColorDark);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* 
+bloglist css */
+.FeatureSecondList .BlogList{
+    display: flex;
+    flex-flow: column;
+    height: 350px;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 450px){
+    .FeatureSecondList{
+        margin-bottom: 2rem;
+    }
+}

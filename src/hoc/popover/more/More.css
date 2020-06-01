@@ -1,0 +1,18 @@
+@import url('../../../assets//Colors.css');
+
+.MorePopover{
+
+}
+
+.MorePopover ul{
+    list-style: none;
+    padding: 8px;
+    padding-bottom: 0;
+}
+
+.MorePopover li{
+    margin: 8px 0;
+    font-size: .9rem;
+    color: var(--textColor);
+    cursor: pointer;
+}

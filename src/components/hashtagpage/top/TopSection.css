@@ -1,0 +1,77 @@
+@import url('../../../assets/Colors.css');
+
+.HashtagSection{
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.HashtagSection .ProfileImgDiv{
+    position: relative;
+    margin-right: 3rem;
+}
+
+.HashtagSection .ProfileImg{
+    width: 100px;
+    height: 100px;
+}
+
+.HashtagSection .PremiumBadge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4px;
+}
+
+.HashtagSection .AccountDetails .AccountName{
+    width: 100%;
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+}
+
+.HashtagSection .AccountDetails span{
+    font-weight: 500;
+    color: var(--optionColor);
+}
+
+.HashtagSection .AccountDetails h2{
+    font-weight: 300;
+}
+.HashtagSection .AccountDetails p{
+    color: var(--optionColor);
+}
+
+.HashtagSection a{
+    padding: 8px 1rem;
+    margin-top: 8px;
+    border: none;
+    background: var(--accentColor);
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.HashtagSection .AccountDetails{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.HashtagSection .AccountDetails .UserBio{
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--paraColor);
+}
+
+.HashtagSection .AccountDetails .JoiningText{
+    color: var(--optionColor);
+}

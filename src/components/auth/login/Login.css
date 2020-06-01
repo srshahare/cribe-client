@@ -1,0 +1,219 @@
+.LoginComponent{
+    display: flex;
+    align-items: center;
+    margin: 8px auto;
+    height: 100%;
+}
+
+.LoginComponent .CloseIcon{
+    position: absolute;
+    margin: 1rem;
+    left: 0;
+    top: 0;
+    cursor: pointer;   
+    z-index: 5; 
+}
+
+.LoginComponent .InputContainer{
+    width: 40%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 2rem;
+    animation: loginAnim .3s forwards;
+}
+
+.LoginComponent .EmailInput{
+    border: 1px solid #ddd;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.LoginComponent .PassInput{
+    border: 1px solid #ddd;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.LoginComponent input{
+    border: none;
+    padding: 8px;
+    outline: none;
+    width: 85%;
+    color: black;
+}
+
+::placeholder{
+    color: #929699;
+}
+
+.LoginComponent .AccountIcon{
+    border: 1px solid #ddd;
+    border-width: 0 1px 0 0;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+}
+.LoginComponent .KeyIcon{
+    border: 1px solid #ddd;
+    border-width: 0 1px 0 0;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.LoginComponent .CheckContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LoginComponent .LoginBtn{
+    padding: 12px 16px;
+    background: #4786FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+}
+
+.LoginComponent .LoginBtn:hover{
+    box-shadow: 0 5px 8px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.LoginComponent .ForgotContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.LoginComponent p{
+    margin: 0;
+    color: #929699;
+}
+
+.LoginComponent .ForgotPara:hover{
+    cursor: pointer;
+    color: black;
+    transition: .3s ease-in-out;
+}
+
+.LoginComponent .RegisterPara{
+    color: #4786FF;
+}
+
+.LoginComponent .RegisterPara:hover{
+    cursor: pointer;
+    color: rgb(53, 105, 201);
+    transition: .3s ease-in-out;
+}
+
+.LoginComponent .OrBreak{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.LoginComponent .OrBreak .row{
+    height: .1px;
+    background: #929699;
+    width: 130px;
+    margin-top: 3px;
+}
+
+.LoginComponent .AuthOptionsContainer{
+    margin-top: 3rem;
+}
+
+.LoginComponent .AuthOptionsContainer img{
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 8px 0 0 8px;
+}
+.LoginComponent .AuthOptionsContainer .FacebookLogin{
+    background: #3B5998;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+.FacebookLogin:hover{
+    box-shadow: 0 5px 8px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.FacebookLogin img{
+    background-color: rgb(38, 63, 116);
+}
+.FacebookLogin p,
+.TwitterLogin p,
+.GoogleLogin p{
+    color: white;
+    width: 100%;
+    margin: 0;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.LoginComponent .AuthOptionsContainer .TwitterLogin{
+    background: #00ACED;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+.TwitterLogin:hover{
+    box-shadow: 0 5px 8px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.TwitterLogin img{
+    background-color: rgb(0, 136, 185);
+}
+
+.LoginComponent .AuthOptionsContainer .GoogleLogin{
+    background: #F44336;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+.GoogleLogin:hover{
+    box-shadow: 0 5px 8px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.GoogleLogin img{
+    background-color: rgb(179, 43, 33);
+}
+
+.LoginComponent .ImageContainer{
+    width: 50%;
+    height: 100%;
+    animation: loginAnim .3s forwards;
+}
+
+.LoginComponent .ImageContainer img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes loginAnim {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

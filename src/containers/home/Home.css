@@ -1,0 +1,40 @@
+@import url('../../assets//Colors.css');
+
+.Home{
+  
+}
+
+.Home .AllBlogsHomeMobile{
+    display: none;
+}
+
+.Home .FeaturedSection{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.Home .AllBlogsHome h4{
+    text-align: left;
+    padding-left: 8px;
+    color: var(--textColor);
+}
+
+@media only screen and (max-width: 450px){
+    .Home .FeaturedSection{
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+    .Home .AllBlogsHomeMobile{
+        display: block;
+    }
+    .Home .AllBlogsHomeMobile h4{
+        text-align: left;
+        margin: 0;
+        padding: 8px;
+    }
+    .Home .AllBlogsHome{
+        display: none;
+    }
+}
