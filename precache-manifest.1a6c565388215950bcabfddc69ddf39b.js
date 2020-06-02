@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b210ea938c9f50170b3fbeca71ed5a3b",
+    "revision": "50a05cb53607555ee402ea924238f9c0",
     "url": "/cribe-client/index.html"
   },
   {
-    "revision": "6e66993a9f9125abd881",
-    "url": "/cribe-client/static/css/main.972ca87a.chunk.css"
+    "revision": "e51efcad46d57ecc80b1",
+    "url": "/cribe-client/static/css/2.eb43dee1.chunk.css"
   },
   {
-    "revision": "27ed9317309333586b45",
-    "url": "/cribe-client/static/js/2.4cf98ddf.chunk.js"
+    "revision": "47a0cd92ccbb60dfe215",
+    "url": "/cribe-client/static/css/main.2bc8251c.chunk.css"
   },
   {
-    "revision": "d09ac505fec0e9130a1d5b85fb3fa6dc",
-    "url": "/cribe-client/static/js/2.4cf98ddf.chunk.js.LICENSE.txt"
+    "revision": "e51efcad46d57ecc80b1",
+    "url": "/cribe-client/static/js/2.7aca54c4.chunk.js"
   },
   {
-    "revision": "6e66993a9f9125abd881",
-    "url": "/cribe-client/static/js/main.d8c8f7cb.chunk.js"
+    "revision": "d14f21e42c09509e44bd25febcf4b2dc",
+    "url": "/cribe-client/static/js/2.7aca54c4.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "47a0cd92ccbb60dfe215",
+    "url": "/cribe-client/static/js/main.c7f69c11.chunk.js"
   },
   {
     "revision": "98454a0f5cee15f7a47a",

@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/cribe-client/static/css/main.972ca87a.chunk.css",
-    "main.js": "/cribe-client/static/js/main.d8c8f7cb.chunk.js",
-    "main.js.map": "/cribe-client/static/js/main.d8c8f7cb.chunk.js.map",
+    "main.css": "/cribe-client/static/css/main.2bc8251c.chunk.css",
+    "main.js": "/cribe-client/static/js/main.c7f69c11.chunk.js",
+    "main.js.map": "/cribe-client/static/js/main.c7f69c11.chunk.js.map",
     "runtime-main.js": "/cribe-client/static/js/runtime-main.21a5328b.js",
     "runtime-main.js.map": "/cribe-client/static/js/runtime-main.21a5328b.js.map",
-    "static/js/2.4cf98ddf.chunk.js": "/cribe-client/static/js/2.4cf98ddf.chunk.js",
-    "static/js/2.4cf98ddf.chunk.js.map": "/cribe-client/static/js/2.4cf98ddf.chunk.js.map",
+    "static/css/2.eb43dee1.chunk.css": "/cribe-client/static/css/2.eb43dee1.chunk.css",
+    "static/js/2.7aca54c4.chunk.js": "/cribe-client/static/js/2.7aca54c4.chunk.js",
+    "static/js/2.7aca54c4.chunk.js.map": "/cribe-client/static/js/2.7aca54c4.chunk.js.map",
     "index.html": "/cribe-client/index.html",
-    "precache-manifest.c448bdd6a82f76afcf6d21335a6fc7c2.js": "/cribe-client/precache-manifest.c448bdd6a82f76afcf6d21335a6fc7c2.js",
+    "precache-manifest.1a6c565388215950bcabfddc69ddf39b.js": "/cribe-client/precache-manifest.1a6c565388215950bcabfddc69ddf39b.js",
     "service-worker.js": "/cribe-client/service-worker.js",
-    "static/css/main.972ca87a.chunk.css.map": "/cribe-client/static/css/main.972ca87a.chunk.css.map",
-    "static/js/2.4cf98ddf.chunk.js.LICENSE.txt": "/cribe-client/static/js/2.4cf98ddf.chunk.js.LICENSE.txt",
+    "static/css/2.eb43dee1.chunk.css.map": "/cribe-client/static/css/2.eb43dee1.chunk.css.map",
+    "static/css/main.2bc8251c.chunk.css.map": "/cribe-client/static/css/main.2bc8251c.chunk.css.map",
+    "static/js/2.7aca54c4.chunk.js.LICENSE.txt": "/cribe-client/static/js/2.7aca54c4.chunk.js.LICENSE.txt",
     "static/media/community.svg": "/cribe-client/static/media/community.238e3bbf.svg",
     "static/media/earnmoney.svg": "/cribe-client/static/media/earnmoney.0e07bad6.svg",
     "static/media/firstsection.svg": "/cribe-client/static/media/firstsection.df83de9b.svg",
@@ -21,8 +23,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.21a5328b.js",
-    "static/js/2.4cf98ddf.chunk.js",
-    "static/css/main.972ca87a.chunk.css",
-    "static/js/main.d8c8f7cb.chunk.js"
+    "static/css/2.eb43dee1.chunk.css",
+    "static/js/2.7aca54c4.chunk.js",
+    "static/css/main.2bc8251c.chunk.css",
+    "static/js/main.c7f69c11.chunk.js"
   ]
 }
