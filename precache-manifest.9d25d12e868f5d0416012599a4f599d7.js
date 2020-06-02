@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd886631cadff5992b2c8dcd267c8369",
+    "revision": "e3c1924ece31ec6e07f22c7c4327a27a",
     "url": "/cribe-client/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cribe-client/static/css/2.eb43dee1.chunk.css"
   },
   {
-    "revision": "9f426284fb5af0b46b49",
+    "revision": "e0f9056154b7f3396cf1",
     "url": "/cribe-client/static/css/main.2bc8251c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cribe-client/static/js/2.7aca54c4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9f426284fb5af0b46b49",
-    "url": "/cribe-client/static/js/main.3ea7bf53.chunk.js"
+    "revision": "e0f9056154b7f3396cf1",
+    "url": "/cribe-client/static/js/main.76b2638d.chunk.js"
   },
   {
     "revision": "98454a0f5cee15f7a47a",
