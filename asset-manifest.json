@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cribe-client/static/css/main.2bc8251c.chunk.css",
-    "main.js": "/cribe-client/static/js/main.c7f69c11.chunk.js",
-    "main.js.map": "/cribe-client/static/js/main.c7f69c11.chunk.js.map",
+    "main.js": "/cribe-client/static/js/main.3ea7bf53.chunk.js",
+    "main.js.map": "/cribe-client/static/js/main.3ea7bf53.chunk.js.map",
     "runtime-main.js": "/cribe-client/static/js/runtime-main.21a5328b.js",
     "runtime-main.js.map": "/cribe-client/static/js/runtime-main.21a5328b.js.map",
     "static/css/2.eb43dee1.chunk.css": "/cribe-client/static/css/2.eb43dee1.chunk.css",
     "static/js/2.7aca54c4.chunk.js": "/cribe-client/static/js/2.7aca54c4.chunk.js",
     "static/js/2.7aca54c4.chunk.js.map": "/cribe-client/static/js/2.7aca54c4.chunk.js.map",
     "index.html": "/cribe-client/index.html",
-    "precache-manifest.1a6c565388215950bcabfddc69ddf39b.js": "/cribe-client/precache-manifest.1a6c565388215950bcabfddc69ddf39b.js",
+    "precache-manifest.43505257e2c6ec9b7d983473fac4f053.js": "/cribe-client/precache-manifest.43505257e2c6ec9b7d983473fac4f053.js",
     "service-worker.js": "/cribe-client/service-worker.js",
     "static/css/2.eb43dee1.chunk.css.map": "/cribe-client/static/css/2.eb43dee1.chunk.css.map",
     "static/css/main.2bc8251c.chunk.css.map": "/cribe-client/static/css/main.2bc8251c.chunk.css.map",
@@ -26,6 +26,6 @@
     "static/css/2.eb43dee1.chunk.css",
     "static/js/2.7aca54c4.chunk.js",
     "static/css/main.2bc8251c.chunk.css",
-    "static/js/main.c7f69c11.chunk.js"
+    "static/js/main.3ea7bf53.chunk.js"
   ]
 }
