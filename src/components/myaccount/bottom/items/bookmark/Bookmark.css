@@ -1,0 +1,101 @@
+.BookmarkItem{
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 8px;
+    padding-bottom: 1rem;
+}
+
+.BookmarkItem img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.BookmarkItem .Context{
+    margin-left: 1rem;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.BookmarkItem .EndBox{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.BookmarkItem .EndBox .EndBoxMobile{
+    display: none;
+}
+
+.BookmarkItem .EndBox .OptionBox{
+    display: flex;
+    align-items: center;
+}
+
+.BookmarkItem .Context h3{
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--textColor);
+}
+
+.BookmarkItem .Context p{
+    font-size: 1rem;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+    color: var(--paraColor);
+    margin-top: 8px;
+}
+
+.BookmarkItem .Context .EndBox p{
+    font-size: .8rem;
+    color: var(--optionColor);
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.BookmarkItem .Context .EndBox span{
+    color: var(--themeColorDark);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.BookmarkItemList{
+
+}
+
+@media only screen and (max-width: 450px){
+    .BookmarkItem img{
+        height: 75px;
+        width: 75px;
+        object-fit: cover;
+    }    
+    .BookmarkItem .Context{
+        height: 75px;
+    }
+    .BookmarkItem .Context p{
+        -webkit-line-clamp: 2;
+        margin-top: 0;
+    }
+    .BookmarkItem .Context h3{
+        font-size: 1rem;
+    }
+    .BookmarkItem .EndBox .EndBoxDesktop{
+        display: none;
+    }
+    .BookmarkItem .EndBox .EndBoxMobile{
+        display: block;
+    }
+}

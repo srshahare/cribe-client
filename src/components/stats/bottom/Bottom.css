@@ -1,0 +1,12 @@
+@import url('../../../assets//Colors.css');
+
+.StatisticsBottom{
+    width: 80%;
+    margin: 2rem auto;
+    margin-bottom: 8rem;
+}
+
+.StatisticsBottom h3{
+    color: var(--textColor);
+    text-align: left;
+}

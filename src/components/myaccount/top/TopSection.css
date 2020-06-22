@@ -7,6 +7,10 @@
     justify-content: space-evenly;
 }
 
+.AccountSection .AccountDetails .FollowersDiv{
+    display: none;
+}
+
 .AccountSection .ProfileImgDiv{
     position: relative;
     margin-right: 3rem;
@@ -25,10 +29,41 @@
     margin: 4px;
 }
 
+.AccountSection .AccountDetails a{
+    padding: 8px 1rem;
+    margin-right: 8px;
+    border: none;
+    background: var(--accentColor);
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    display: none;
+}
+.AccountSection .AccountDetails .AccountName a{
+    padding: 8px 1rem;
+    margin-right: 8px;
+    border: none;
+    background: var(--accentColor);
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.AccountSection .AccountDetails .AccountName .FollowOther{
+    display: flex;
+    align-items: center;
+}
+
 .AccountSection .AccountDetails .AccountName{
     width: 100%;
     display: flex;
-    align-items: initial;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -42,18 +77,6 @@
 }
 .AccountSection .AccountDetails p{
     color: var(--optionColor);
-}
-
-.AccountSection a{
-    padding: 0 1rem;
-    border: none;
-    background: var(--accentColor);
-    outline: none;
-    color: white;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
 }
 
 .AccountSection .AccountDetails{
@@ -73,4 +96,55 @@
 
 .AccountSection .AccountDetails .JoiningText{
     color: var(--optionColor);
+}
+
+@media only screen and (max-width: 450px){
+    .AccountSection{
+        width: 90%;
+        justify-content: flex-start;
+    }
+    .AccountSection .ProfileImgDiv{
+        margin-right: 1rem;
+    }
+
+    .AccountSection .ProfileImg{
+        width: 75px;
+        height: 75px;
+    }
+    .AccountSection .PremiumBadge{
+        width: 25px;
+        height: 25px;
+        margin: 0;
+    }
+    .AccountSection .AccountDetails .AccountName a{
+        display: none;
+    }
+    .AccountSection .AccountDetails a{
+        display: block;
+        margin-bottom: 8px;
+    }
+    .AccountSection .AccountDetails p{
+        text-align: left;
+    }
+    .AccountSection .AccountDetails .FollowersDiv{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+    .AccountSection .FollowersDiv p{
+        margin: 0;
+        text-align: center;
+    }
+    .AccountSection .AccountDetails .FollowersDivDesk{
+        display: none;
+    }
+    .AccountSection .AccountDetails .UserBio{
+        text-align: left;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        color: var(--paraColor);
+    }
 }

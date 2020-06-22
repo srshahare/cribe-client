@@ -1,20 +1,46 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './ExploreMore.css';
+import {convertMonth}  from '../../../utils/ConvertDate';
 
-const ExploreMore = () => {
+const ExploreMore = (props) => {
+
+    const {blog} = props;
+
+    const [creator, setCreator] = React.useState(null);
+    const [community, setCommunity] = React.useState(null);
+
+    useEffect(() => {
+        fetch('https://thawing-reaches-88200.herokuapp.com/feed/blog/metainfo/'+blog._id, {
+            method: 'GET', 
+            headers: {
+              Authorization: 'Bearer ' + localStorage.getItem('token')
+            }
+          })
+          .then(res => {
+            return res.json();
+          })
+          .then(result => {
+              setCreator(result.creator);
+              setCommunity(result.community);
+          })
+    }, [blog._id])
+
     return(
         <div className="PageExploreMore">
-            <img src="https://www.spatialsource.com.au/wp-content/uploads/2020/04/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="blog preview"></img>
+            <img src={blog.preview} alt={blog.title}></img>
             <div className="BlackBack"></div>
             <div className="Content">
-                <h3>This is the brand new blog title having only 2 lines</h3>
+                <h4>{blog.title}</h4>
+                {creator === null || community === null?
+                "":
                 <div className="CreatorInfo">
-                    <img src="https://www.beinspiredsalon.com/wp-content/uploads/2016/07/Kiera-Knightly-1080x675.jpg" alt="creator profile"></img>
+                    <img src={creator.image} alt={creator.name}></img>
                     <div>
-                        <h4>Emilli Clara</h4>
-                        <p>june 23, 2019</p>
+                        <h6>{creator.name}</h6>
+                        <p>{convertMonth(blog.createdAt)}</p>
                     </div>
                 </div>
+                }
             </div>
         </div>
     )

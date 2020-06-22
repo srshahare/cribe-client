@@ -1,0 +1,25 @@
+@import url('../../../assets//Colors.css');
+
+.TopicPageAll {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.TopicPageAll h4{
+    text-align: left;
+    color: var(--textColor);
+}
+
+.TopicPageAll .MobileAll{
+    display: none;
+}
+
+@media only screen and (max-width: 450px){
+    .TopicPageAll .DesktopAll{
+        display: none;
+    }
+
+    .TopicPageAll .MobileAll{
+        display: block;
+    }
+}

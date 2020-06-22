@@ -1,10 +1,13 @@
 import React from 'react';
 import './TopicsNav.css'
 
-const TopicNav = () => {
+const TopicNav = (props) => {
+
+    const {topic, clickedTopic} = props;
+
     return(
-        <div className="TopicItem">
-            <p>Politics</p>
+        <div className="TopicItem" onClick={() => clickedTopic(topic._id)}>
+            <p>{topic.name}</p>
         </div>
     )
 }

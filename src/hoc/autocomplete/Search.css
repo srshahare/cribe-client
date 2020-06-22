@@ -1,0 +1,53 @@
+@import url('../../assets//Colors.css');
+
+.AutoCompleteBox {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 8px;
+}
+
+#tags-outlined-option-0{
+    padding: 0;
+}
+
+.SearchUser .Item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.SearchUser .Item p{
+    font-size: .8rem;
+    color: var(--paraColor);
+    margin: 0;
+    padding-left: 1rem;
+}
+.SearchUser .Item h5{
+    font-size: .9rem;
+    padding-left: 1rem;
+    margin: 0;
+}
+.SearchCommunity .Item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.SearchCommunity .Item p{
+    font-size: .8rem;
+    color: var(--paraColor);
+    margin: 0;
+    padding-left: 1rem;
+}
+.SearchCommunity .Item h5{
+    font-size: .9rem;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.SearchCommunity img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}

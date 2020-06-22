@@ -2,24 +2,24 @@ import React, {Component} from 'react';
 import Promotion from './Promotion';
 import './Promotion.css'
 
-class PromotionList extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
+const PromotionList = (props) => {
 
-    }
-  }
+    const {blogs} = props;
 
-  render() {
     return (
       <div className="FeatureThirdList">
           <div className="PromotionList">
-            <Promotion />
-            <Promotion />
+            {blogs.map(blog => {
+              return (
+                <Promotion
+                  key={blog._id} 
+                  blog={blog}/>
+            )
+            })}
         </div>
       </div>
     );
-  }
+
 }
 
 export default PromotionList;

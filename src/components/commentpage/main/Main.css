@@ -1,0 +1,67 @@
+.CommentMain{
+  width: 50%;
+  margin: 2rem auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.CommentMain textarea{
+  height: 100px;
+  width: 100%;
+  resize: none;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,.1);
+  border-radius: 4px;
+  border: none;
+  padding: 1rem;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.CommentMain button{
+  outline: none;
+  margin-top: 8px;
+}
+
+.CommentMain .CommentList{
+  width: 100%;
+}
+
+.CommentItem {
+  display: flex; 
+  flex-flow: column;
+  align-items: flex-start;
+  margin: 1rem 0;
+  background: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,.1);
+  border-radius: 4px;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.CommentItem .Options{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.CommentItem p{
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.CommentItem .TopSection{
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.CommentItem .TopSection img{
+  width: 30px;
+  margin-right: 8px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 8rem;
+}

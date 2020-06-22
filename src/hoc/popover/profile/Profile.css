@@ -59,3 +59,10 @@ a{
 a:hover{
     color: var(--optionColor);
 }
+
+
+@media only screen and (max-width: 450px){
+    .ProfilePopover{
+        width: 98%;
+    }
+}

@@ -12,18 +12,55 @@ import Google from '../../../assets/images/google_icon.png';
 import LoginImage from '../../../assets/images/login.svg';
 import CloseIcon from '@material-ui/icons/Close';
 
+import GoogleLogin from 'react-google-login';
+import FacebookLogin from 'react-facebook-login';
+import axios from 'axios';
+
 const Login = (props) => {
+
+    const responseGoogle = async (res) => {
+        console.log(res)
+        const accessToken = await res.accessToken;
+        const response = await axios.post('http://localhost:5000/auth/oauth/google', {
+            access_token: accessToken
+        })
+        console.log(response)
+        // fetch('http://localhost:5000/auth/oauth/google', {
+        //     method: 'POST',
+        //     headers: {
+        //         "Content-Type": 'application/json'
+        //     },
+        //     body: JSON.stringify({
+        //         access_token: accessToken
+        //     })
+        // })
+        // .then(res => {
+        //     return res.json();
+        // })
+        // .then(result => {
+        //     localStorage.setItem('token', result.token);
+        //     localStorage.setItem('uid', result.uid);
+        //     console.log(result)
+        // })
+    }
+
     return (
         <div className='LoginComponent'>
           <CloseIcon onClick={props.closeAuth} className="CloseIcon" />
           <div className="InputContainer">
               <div className="EmailInput">
                   <EmailIcon className="AccountIcon" style={{color: "#D1D1D1"}}/>
-                  <input placeholder="Email Address"/>
+                  <input 
+                    placeholder="Email Address"
+                    name="email"
+                    onChange={props.onInputChange}/>
               </div>
               <div className="PassInput">
                   <VpnKeyIcon className="KeyIcon" style={{color: "#D1D1D1"}}/>
-                  <input placeholder="Password"/>
+                  <input 
+                    placeholder="Password"
+                    name="password"
+                    onChange={props.onInputChange}/>
               </div>
               <div className="CheckContainer">
                   <FormControlLabel
@@ -39,7 +76,7 @@ const Login = (props) => {
                       style={{color: '#929699', fontWeight: '300'}}
                       label="Remember me"
                   />
-                  <button className="LoginBtn">LOGIN</button>
+                  <button className="LoginBtn" onClick={props.loginHandler}>LOGIN</button>
               </div>
               <div className="ForgotContainer">
                   <p className="RegisterPara" onClick={props.jumpRegisterClicked}>Register now</p>
@@ -51,17 +88,26 @@ const Login = (props) => {
                   <div className="row"></div>
               </div>
               <div className="AuthOptionsContainer">
-                  <div className="FacebookLogin">
-                      <img src={Facebook} alt="facebook icon"></img>
-                      <p>LOGIN WITH FACEBOOK</p>
+                  <div>
+                    <FacebookLogin 
+                        
+                    />
+                      {/* <img src={Facebook} alt="facebook icon"></img>
+                      <p>LOGIN WITH FACEBOOK</p> */}
                   </div>
                   <div className="TwitterLogin">
                       <img src={Twitter} alt="twitter icon"></img>
                       <p>LOGIN WITH TWITTER</p>
                   </div>
-                  <div className="GoogleLogin">
-                      <img src={Google} alt="google icon"></img>
-                      <p>LOGIN WITH GOOGLE</p>
+                  <div>
+                      {/* <img src={Google} alt="google icon"></img> */}
+                    <GoogleLogin 
+                        clientId="315283119800-nh5uvpln740lhmj1kd49jhf309q9bkpi.apps.googleusercontent.com"
+                        buttonText="Sign In with Google"
+                        onSuccess={responseGoogle}
+                        onFailure={responseGoogle}
+                        className="GoogleLogin"
+                    />
                   </div>
               </div>
           </div>

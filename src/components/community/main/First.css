@@ -1,0 +1,128 @@
+@import url('../../../assets//Colors.css');
+
+.CommunityMainFirst{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+}
+
+.CommunityMainFirst .Container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.CommunityMainFirst .PrallaxDiv{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: leftToRight 1s forwards;
+}
+
+.CommunityMainFirst .BlackBack{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,.3), rgba(0,0,0,1));
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: leftToRight 1s forwards;
+}
+
+.CommunityMainFirst .MemberContainer{
+    height: 200px;
+    top: 70%;
+    width: 80%;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 4;
+    background: white;
+    box-shadow: 0 5px 8px rgba(0,0,0,.05);
+    left: 10%;
+    display: flex;
+}
+
+.CommunityMainFirst .MemberTitle{
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 65%;
+    left: 10%;
+}
+
+.CommunityMainFirst .TitleContent{
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    bottom: 40%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.CommunityMainFirst .TitleContent h1{
+    color: white;
+    width: 50%;
+}
+.CommunityMainFirst .TitleContent p{
+    color: var(--paraColor);
+    width: 50%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.CommunityMainFirst .TitleContent button{
+    background: var(--accentColor);
+    width: 100px;
+    border: none;
+    padding: 8px 1rem;
+    color: white;
+    outline: none;
+    border-radius: 4px;
+    margin: 0 1rem;
+}
+
+.CommunityMainFirst .TitleContent .Outlined{
+    background: transparent;
+    width: 100px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.3);
+    border: 1px solid var(--accentColor);
+    padding: 8px 1rem;
+    color: var(--accentColor);
+    outline: none;
+    border-radius: 4px;
+    margin: 0 1rem;
+}
+
+@keyframes leftToRight {
+    from{
+        height: 0;
+    }
+    to{
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .CommunityMainFirst .MemberContainer{
+        overflow-x: scroll;
+        width: 96%;
+        left: 2%;
+        height: 100px;
+        top: 75%;
+    }
+
+    .CommunityMainFirst .MemberTitle{
+        left: 2%;
+        top: 70%;
+    }
+    
+    
+}

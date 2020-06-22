@@ -1,0 +1,49 @@
+.CommentTop{
+    background: #eee;
+    height: 250px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.CommentTop .TopSection{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.CommentTop .UserSection{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 0;
+}
+
+.CommentTop .UserSection p,
+.CommentTop .UserSection h6{
+    margin: 0;
+    margin-left: 8px;
+}
+
+.CommentTop .TopSection h3,
+.CommentTop .TopSection p{
+    text-align: left;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.CommentTop img{
+    width: 100px;
+    height: 100px;
+    margin-right: 2rem;
+    object-fit: cover;
+}

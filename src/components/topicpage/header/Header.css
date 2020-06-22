@@ -1,0 +1,29 @@
+@import url('../../../assets//Colors.css');
+
+.TopicPageHeader{
+    width: 90%;
+    margin: 2rem auto;
+    margin-bottom: 4rem;
+}
+
+.TopicPageHeader h1,
+.TopicPageHeader p{
+    text-align: left;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.TopicPageHeader h1{
+    color: var(--themeColorDark);
+    font-size: 3rem;
+}
+
+.TopicPageHeader .Info{
+    display: flex;
+    align-items: center;
+}
+
+.TopicPageHeader span{
+    font-weight: bold;
+    color: var(--textColor);
+}

@@ -1,28 +1,31 @@
 {
   "files": {
-    "main.css": "/cribe-client1/static/css/main.972ca87a.chunk.css",
-    "main.js": "/cribe-client1/static/js/main.b7730170.chunk.js",
-    "main.js.map": "/cribe-client1/static/js/main.b7730170.chunk.js.map",
-    "runtime-main.js": "/cribe-client1/static/js/runtime-main.5c3c8896.js",
-    "runtime-main.js.map": "/cribe-client1/static/js/runtime-main.5c3c8896.js.map",
-    "static/js/2.ad9c164d.chunk.js": "/cribe-client1/static/js/2.ad9c164d.chunk.js",
-    "static/js/2.ad9c164d.chunk.js.map": "/cribe-client1/static/js/2.ad9c164d.chunk.js.map",
-    "index.html": "/cribe-client1/index.html",
-    "precache-manifest.5453d4edcc32970a4dba9622227a48d3.js": "/cribe-client1/precache-manifest.5453d4edcc32970a4dba9622227a48d3.js",
-    "service-worker.js": "/cribe-client1/service-worker.js",
-    "static/css/main.972ca87a.chunk.css.map": "/cribe-client1/static/css/main.972ca87a.chunk.css.map",
-    "static/js/2.ad9c164d.chunk.js.LICENSE.txt": "/cribe-client1/static/js/2.ad9c164d.chunk.js.LICENSE.txt",
-    "static/media/community.svg": "/cribe-client1/static/media/community.238e3bbf.svg",
-    "static/media/earnmoney.svg": "/cribe-client1/static/media/earnmoney.0e07bad6.svg",
-    "static/media/firstsection.svg": "/cribe-client1/static/media/firstsection.df83de9b.svg",
-    "static/media/hashtagback.jpg": "/cribe-client1/static/media/hashtagback.b0842109.jpg",
-    "static/media/login.svg": "/cribe-client1/static/media/login.144b8e7d.svg",
-    "static/media/thirdsection.svg": "/cribe-client1/static/media/thirdsection.a52ad324.svg"
+    "main.css": "/cribe-client/static/css/main.21d42e78.chunk.css",
+    "main.js": "/cribe-client/static/js/main.11675aa9.chunk.js",
+    "main.js.map": "/cribe-client/static/js/main.11675aa9.chunk.js.map",
+    "runtime-main.js": "/cribe-client/static/js/runtime-main.21a5328b.js",
+    "runtime-main.js.map": "/cribe-client/static/js/runtime-main.21a5328b.js.map",
+    "static/css/2.eb43dee1.chunk.css": "/cribe-client/static/css/2.eb43dee1.chunk.css",
+    "static/js/2.d9779819.chunk.js": "/cribe-client/static/js/2.d9779819.chunk.js",
+    "static/js/2.d9779819.chunk.js.map": "/cribe-client/static/js/2.d9779819.chunk.js.map",
+    "index.html": "/cribe-client/index.html",
+    "precache-manifest.0a7cdb42e2cf4633b75b759a36d17754.js": "/cribe-client/precache-manifest.0a7cdb42e2cf4633b75b759a36d17754.js",
+    "service-worker.js": "/cribe-client/service-worker.js",
+    "static/css/2.eb43dee1.chunk.css.map": "/cribe-client/static/css/2.eb43dee1.chunk.css.map",
+    "static/css/main.21d42e78.chunk.css.map": "/cribe-client/static/css/main.21d42e78.chunk.css.map",
+    "static/js/2.d9779819.chunk.js.LICENSE.txt": "/cribe-client/static/js/2.d9779819.chunk.js.LICENSE.txt",
+    "static/media/community.svg": "/cribe-client/static/media/community.238e3bbf.svg",
+    "static/media/earnmoney.svg": "/cribe-client/static/media/earnmoney.0e07bad6.svg",
+    "static/media/firstsection.svg": "/cribe-client/static/media/firstsection.df83de9b.svg",
+    "static/media/hashtagback.jpg": "/cribe-client/static/media/hashtagback.b0842109.jpg",
+    "static/media/login.svg": "/cribe-client/static/media/login.144b8e7d.svg",
+    "static/media/thirdsection.svg": "/cribe-client/static/media/thirdsection.a52ad324.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5c3c8896.js",
-    "static/js/2.ad9c164d.chunk.js",
-    "static/css/main.972ca87a.chunk.css",
-    "static/js/main.b7730170.chunk.js"
+    "static/js/runtime-main.21a5328b.js",
+    "static/css/2.eb43dee1.chunk.css",
+    "static/js/2.d9779819.chunk.js",
+    "static/css/main.21d42e78.chunk.css",
+    "static/js/main.11675aa9.chunk.js"
   ]
 }

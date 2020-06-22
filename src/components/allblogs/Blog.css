@@ -13,6 +13,10 @@
 
 .AllBlogs .Context{
     margin-left: 1rem;
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    justify-content: space-between;
 }
 
 .AllBlogs .EndBox{
@@ -20,6 +24,10 @@
     margin-top: 1rem;
     align-items: flex-end;
     justify-content: space-between;
+}
+
+.AllBlogs .EndBox .EndBoxMobile{
+    display: none;
 }
 
 .AllBlogs .EndBox .OptionBox{
@@ -43,7 +51,7 @@
     font-size: 1rem;
     text-align: left;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin: 0;
@@ -80,5 +88,11 @@
     }
     .AllBlogs .Context h3{
         font-size: 1rem;
+    }
+    .AllBlogs .EndBox .EndBoxDesktop{
+        display: none;
+    }
+    .AllBlogs .EndBox .EndBoxMobile{
+        display: block;
     }
 }

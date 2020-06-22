@@ -20,20 +20,23 @@ class Featured extends Component {
         <div className="DesktopFeatured">
           <Grid container spacing={3}>
               <Grid item xs={4}>
-                  <Blog />
+                  <Blog 
+                    blog={this.props.featureBlog}/>
               </Grid>
               <Grid item xs={4}>
-                  <BlogList />
+                  <BlogList 
+                    blogs={this.props.featureList}/>
               </Grid>
               <Grid item xs={4}>
-                  <PromotionList />
+                  <PromotionList 
+                    blogs={this.props.promotionList}/>
               </Grid>
           </Grid>
         </div>
         <div className="MobileFeatured">
-          <Blog />
-          <BlogList />
-          <PromotionList />
+          <Blog blog={this.props.featureBlog}/>
+          <BlogList blogs={this.props.featureList} />
+          <PromotionList blogs={this.props.promotionList}/>
         </div>
       </div>
     );

@@ -1,0 +1,11 @@
+@import url('../../../assets//Colors.css');
+
+.TopicPageMostViewed{
+    width: 90%;
+    margin: 4rem auto;
+}
+
+.TopicPageMostViewed h4{
+    text-align: left;
+    color: var(--textColor);
+}

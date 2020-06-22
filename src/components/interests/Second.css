@@ -1,0 +1,58 @@
+@import url('../../assets//Colors.css');
+
+.InterestsSecond{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.InterestsSecond .Options{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.InterestsSecond .Container .First{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.InterestsSecond .Container .Fourth{
+    width: 75%;
+    margin: 1rem;
+}
+
+.InterestsSecond .Options button{
+    margin: 0;
+    color: var(--paraColor);
+    padding: 8px 1rem;
+    border: 1px solid transparent;
+    border-width: 0 0 1px 0;
+    outline: none;
+    background: white;
+    cursor: pointer;
+}
+
+.InterestsSecond .Options .active{
+    border: 1px solid #000;
+    border-width: 0 0 1px 0;
+    color: var(--textColor);
+}
+
+.InterestsSecond hr{
+    margin: 0;
+}
+
+@media only screen and (max-width: 450px){
+    .InterestsSecond .Options button{
+        flex: 1;
+        font-size: .8rem;
+    }
+    .InterestsSecond .Options{
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+    }
+    .InterestsSecond .Options::-webkit-scrollbar{
+        display: none;
+    }
+}

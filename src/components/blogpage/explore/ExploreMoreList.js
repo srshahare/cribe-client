@@ -2,12 +2,19 @@ import React from 'react';
 import './ExploreMore.css';
 import ExploreMore from './ExploreMore';
 
-const ExploreMoreList = () => {
+const ExploreMoreList = (props) => {
+
+    const {blogs} = props;
+
     return(
         <div className="PageExploreMoreList">
-            <ExploreMore />
-            <ExploreMore />
-            <ExploreMore />
+            {blogs.map(blog => {
+                return (
+                    <ExploreMore
+                        key={blog._id} 
+                        blog={blog}/>
+                )
+            })}
         </div>
     )
 }

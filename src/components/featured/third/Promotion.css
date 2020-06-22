@@ -23,6 +23,10 @@
     justify-content: space-between;
 }
 
+.FeatureThirdList .EndBox .EndBoxMobile{
+    display: none;
+}
+
 .FeatureThird .EndBox .OptionBox{
     display: flex;
     align-items: center;
@@ -87,5 +91,11 @@ bloglist css */
 @media only screen and (max-width: 450px){
     .FeatureThirdList {
         margin-bottom: 2rem;
+    }
+    .FeatureThirdList .EndBox .EndBoxDesktop{
+        display: none;
+    }
+    .FeatureThirdList .EndBox .EndBoxMobile{
+        display: block;
     }
 }

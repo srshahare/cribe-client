@@ -1,0 +1,103 @@
+@import url("../../../assets//Colors.css");
+
+.CreateNav{
+    background: white;
+    width: 100%;
+}
+.CreateNav button{
+    outline: none;
+}
+
+.CreateNav .NavContext{
+    display: flex;
+    padding: 8px 8rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.CreateNav .ItemsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CreateNav .ItemsContainerMobile{
+    display: none;
+}
+
+.CreateNav .ItemsContainer .CreateBlogImg{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.CreateNav .ItemsContainer .NotiIcon,
+.CreateNav .ItemsContainerMobile .NotiIcon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+.CreateNav .ItemsContainer .Profile,
+.CreateNav .ItemsContainerMobile .Profile{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.CreateNav .ItemsContainer .SearchBox{
+    padding: 6px 1rem;
+    border: 1px solid #eee;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 8rem;
+    margin-left: 1rem;
+}
+
+.CreateNav .ItemsContainer .SearchIcon,
+.CreateNav .ItemsContainerMobile .SearchIcon{
+    padding: 5px;
+    border-radius: 8rem;
+    font-size: 2rem;
+    background: #eee;
+    margin: 0;
+    cursor: pointer;
+}
+
+.CreateNav img{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px){
+    .CreateNav .NavContext{
+        padding: 8px 0;
+    }
+    .CreateNav img{
+        width: 75px;
+        height: auto;
+        object-fit: contain;
+        margin: 0 1rem;
+    }
+    .CreateNav .ItemsContainer{
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 500;
+    }
+    .CreateNav .ItemsContainerMobile{
+        display: inline-block;
+        margin: 0 1rem;
+    }
+    .CreateNav .ItemsContainerMobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

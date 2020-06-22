@@ -1,0 +1,82 @@
+@import url('../../../assets/Colors.css');
+
+.CommunityLandSecond{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.CommunityLandSecond h1{
+    color: var(--textColor);
+    text-align: left;
+    margin: 2rem 0;
+}
+
+.CommunityLandSecond .LeftBlock{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+.CommunityLandSecond .LeftBlock h2{
+    color: white;
+    background: var(--themeColorDark);
+    padding:8px;
+    border-radius: 8rem;
+    margin-left: 8px;
+    width: 65px;
+}
+.CommunityLandSecond .RightBlock{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.CommunityLandSecond .RightBlock h2{
+    color: white;
+    background: var(--themeColorDark);
+    padding:8px;
+    border-radius: 8rem;
+    margin-right: 8px;
+    width: 65px;
+}
+
+.CommunityLandSecond .LeftBlock h3{
+    color: white;
+    text-align: right;
+    width: 80%;
+    padding: 1rem;
+    background: var(--themeColorDark);
+    border-radius: 4px;
+    box-shadow: 0 3px 4px rgba(0,0,0,.1);
+}
+.CommunityLandSecond .RightBlock h3{
+    color: white;
+    text-align: left;
+    width: 80%;
+    padding: 1rem;
+    background: var(--themeColorDark);
+    border-radius: 4px;
+    box-shadow: 0 3px 4px rgba(0,0,0,.1);
+}
+
+@media only screen and (max-width: 450px){
+    .CommunityLandSecond h1{
+        font-size: 2rem;
+    }
+
+    .CommunityLandSecond .LeftBlock h2{
+        font-size: 1.3rem;
+        width: 40px;
+    }
+    .CommunityLandSecond .RightBlock h2{
+        font-size: 1.3rem;
+        width: 40px;
+    }
+    .CommunityLandSecond .LeftBlock h3{
+        font-size: 1.3rem;
+    }
+    .CommunityLandSecond .RightBlock h3{
+        font-size: 1.3rem;
+    }
+}

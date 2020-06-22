@@ -1,7 +1,11 @@
 @import url('../../../assets//Colors.css');
 
 .CommunityPopover{
-   
+   max-width: 270px;
+   width: 270px;
+   border: 1px solid #eee;
+   border-radius: 4px;
+   box-shadow: 0 8px 16px rgba(0,0,0,.1);
 }
 
 .CommunityPopover .PopContent{

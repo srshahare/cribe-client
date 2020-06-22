@@ -8,7 +8,7 @@
 
 .HomeNav .NavContext{
     display: flex;
-    padding: 8px 8rem;
+    padding: 8px 5%;
     align-items: center;
     justify-content: space-between;
 }
@@ -18,16 +18,29 @@
     justify-content: center;
 }
 
-.HomeNav .ItemsContainer .NotiIcon{
+.HomeNav .ItemsContainerMobile{
+    display: none;
+}
+
+.HomeNav .ItemsContainer .CreateBlogImg{
     width: 25px;
     height: 25px;
     cursor: pointer;
 }
 
-.HomeNav .ItemsContainer .Profile{
+.HomeNav .ItemsContainer .NotiIcon,
+.HomeNav .ItemsContainerMobile .NotiIcon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+.HomeNav .ItemsContainer .Profile,
+.HomeNav .ItemsContainerMobile .Profile{
     width: 30px;
     height: 30px;
-    margin: 0 12px;
+    margin: 0;
     cursor: pointer;
 }
 
@@ -37,19 +50,17 @@
     outline: none;
     font-size: 1rem;
     border-radius: 8rem;
+    margin-left: 1rem;
 }
 
-.HomeNav .ItemsContainer .SearchIcon{
+.HomeNav .ItemsContainer .SearchIcon,
+.HomeNav .ItemsContainerMobile .SearchIcon{
     padding: 5px;
     border-radius: 8rem;
     font-size: 2rem;
     background: #eee;
-    margin: 0 4px;
+    margin: 0;
     cursor: pointer;
-}
-
-.HomeNav .dropbtn{
-    display: none;
 }
 
 .HomeNav img{
@@ -57,15 +68,7 @@
     height: auto;
     object-fit: contain;
     margin: 0;
-}
-
-
-.HomeNav .TopicsNavList{
-    display: flex;
-    justify-content: space-evenly;
-    background: white;
-    position: sticky;
-    top: 0;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 450px){
@@ -86,10 +89,13 @@
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 500;
     }
-    .HomeNav .dropbtn{
+    .HomeNav .ItemsContainerMobile{
         display: inline-block;
         margin: 0 1rem;
-        cursor: pointer;
     }
-    .show {display:block;}
+    .HomeNav .ItemsContainerMobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

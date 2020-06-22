@@ -3,23 +3,24 @@ import './Community.css';
 import {Popover} from 'react-bootstrap';
 
 
-const Community = () => {
+export default function User(community = null) {
     return(
-        <Popover id={`popover-positioned-bottom`}>
-            <div className="CommunityPopover">
+        <Popover id={`popover-positioned-bottom`} className="CommunityPopover">
+            <div>
+                {community === null?
+                "":
                 <Popover.Content className="PopContent">
                     <div className="CreatorContent">
-                        <img src="https://daqxzxzy8xq3u.cloudfront.net/wp-content/uploads/2019/04/30123219/react-router-dom-feature-img.jpg" alt="community profile"></img>
+                        <img src={community.preview} alt={community.name}></img>
                         <div>
-                            <h5>React Programmers</h5>
-                            <p>12 members, 43k followers</p>
+                            <h5>{community.name}</h5>
+                            <p>12 members, {community.followers} followers</p>
                         </div>
                     </div>
-                    <p className="CommunityBio">Enim ex et occaecat dolore sint. Ullamco exercitation esse commodo pariatur ex ex enim duis do fugiat ut velit. Nisi labore mollit consequat veniam consequat officia eiusmod. Cillum magna est non laboris commodo labore et sit mollit duis ullamco elit magna veniam. Fugiat ipsum officia exercitation adipisicing reprehenderit nulla tempor sunt.</p>
+                    <p className="CommunityBio">{community.desc}</p>
                 </Popover.Content>
+                }
             </div>
         </Popover>
     )
 }
-
-export default Community;

@@ -11,18 +11,24 @@
     justify-content: space-between;
     position: relative;
     z-index: 100;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); */
 }
 .PageNav .ItemsContainer{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.PageNav .ItemsContainerMobile{
+    display: none;
+}
 
 .PageNav .ItemsContainer .NotiIcon{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+    background: white;
+    border-radius: 8rem;
+    padding: 8px;
 }
 
 .PageNav .ItemsContainer .Profile{
@@ -30,6 +36,8 @@
     height: 30px;
     margin: 0 12px;
     cursor: pointer;
+    background-color: white;
+    color: var(--paraColor);
 }
 
 .PageNav .ItemsContainer .SearchBox{
@@ -45,8 +53,10 @@
 .PageNav .ItemsContainer .SearchIcon{
     padding: 5px;
     border-radius: 8rem;
-    background: #eee;
+    background: white;
     margin: 0 4px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -59,6 +69,7 @@
     height: auto;
     object-fit: contain;
     margin: 0;
+    cursor: pointer;
 }
 
 
@@ -80,18 +91,21 @@
         object-fit: contain;
         margin: 0 1rem;
     }
-    .PageNav .ItemsContainer{
+
+    .PageNav  .ItemsContainer .SearchBox{
         display: none;
-        position: absolute;
-        background-color: black;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 500;
     }
-    .PageNav .dropbtn{
-        display: inline-block;
-        margin: 0 1rem;
-        cursor: pointer;
+
+    .PageNav .ItemsContainer .SearchIcon{
+        margin: 0;
+        margin-right: 1rem;
     }
-    .show {display:block;}
+    .PageNav .ItemsContainer .Profile{
+        margin-right: 1rem;
+        margin-left: 0;
+    }
+    .PageNav .ItemsContainer .NotiIcon{
+        margin: 0;
+        margin-right: 1rem;
+    }
 }

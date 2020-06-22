@@ -1,0 +1,71 @@
+.MyAccountBlogItem{
+    margin-right: 8px;
+}
+
+.MyAccountBlogItem img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.MyAccountBlogItem .EndBox{
+    display: flex;
+    margin-top: 1rem;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.MyAccountBlogItem .EndBoxMobile{
+    display: none;
+}
+
+.MyAccountBlogItem .EndBox .OptionBox{
+    display: flex;
+    align-items: center;
+}
+
+.MyAccountBlogItem .Context h5{
+    text-align: left;
+    font-weight: 500;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--textColor);
+    margin-top: 1rem;
+}
+
+.MyAccountBlogItem .Context .EndBox p{
+    font-size: .8rem;
+    color: var(--optionColor);
+    text-align: left;
+    margin: 0;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.MyAccountBlogItem .Context .EndBox span{
+    color: var(--themeColorDark);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px){
+    .MyAccountBlogItem{
+        margin-bottom: 2rem;
+    }
+    .MyAccountBlogItem .Context h5{
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+    .MyAccountBlogItem .EndBox{
+        margin-top: 8px;
+    }
+    .MyAccountBlogItem .EndBox .EndBoxDesktop{
+        display: none;
+    }
+    .MyAccountBlogItem .EndBox .EndBoxMobile{
+        display: block;
+    }
+}

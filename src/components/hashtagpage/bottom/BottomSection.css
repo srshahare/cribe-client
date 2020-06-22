@@ -5,6 +5,12 @@
     margin: 0 auto;
 }
 
+.HashtagBottomSection .Container .Blogs{
+    width: 110%;
+    margin-left: -5%;
+    margin-top: 1rem;
+}
+
 .HashtagBottomSection .Options{
     display: flex;
     align-items: center;
@@ -30,4 +36,10 @@
 
 .HashtagBottomSection hr{
     margin: 0;
+}
+
+@media only screen and (max-width: 450px){
+    .HashtagBottomSection{
+        width: 80%;
+    }
 }

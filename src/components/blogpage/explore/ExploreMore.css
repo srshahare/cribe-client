@@ -4,6 +4,7 @@
     position: relative;
     margin-left: 1rem;
     height: 250px;
+    flex: 1;
 }
 
 .PageExploreMore .BlackBack{
@@ -14,12 +15,15 @@
     width: 100%;
     height: 250px;
     z-index: 5;
+    border-radius: 4px;
+    box-shadow: 0 8px 1rem rgba(0,0,0,.2);
 }
 
 .PageExploreMore img{
     width: 100%;
     height: 250px;
     object-fit: cover;
+    border-radius: 4px;
 }
 
 .PageExploreMore .Content{
@@ -27,7 +31,7 @@
     bottom: 0;
     left: 0;
     z-index: 50;
-    
+    width: 100%;
 }
 
 .PageExploreMore .Content .CreatorInfo{
@@ -42,12 +46,14 @@
     color: white;
     font-size: .8rem;
     margin-left: 8px;
+    text-align: left;
 }
-.PageExploreMore .Content .CreatorInfo h4{
+.PageExploreMore .Content .CreatorInfo h6{
     font-weight: 500;
     color: white;
     margin: 0;
     margin-left: 8px;
+    text-align: left;
 }
 
 .PageExploreMore .Content .CreatorInfo img{
@@ -57,12 +63,16 @@
     border-radius: 8rem;
 }
 
-.PageExploreMore .Content h3{
+.PageExploreMore .Content h4{
     color: white;
     font-weight: 500;
     text-align: left;
     padding: 8px;
     margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 
@@ -71,6 +81,7 @@
     margin-bottom: 4rem;
     margin-right: 1rem;
     display: flex;
+    flex-grow: 1;
     align-items: center;
     justify-content: center;
 }

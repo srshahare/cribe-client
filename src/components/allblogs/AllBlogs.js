@@ -1,31 +1,25 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Blog from './Blog';
 import './Blog.css'
 
-class AllBlogs extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
+const AllBlogs = (props) => {
+  const { blogs, bookmarks } = props;
 
-    }
-  }
-
-  render() {
-    return (
-      <div className="AllBlogsList">
-          <div className="BlogList">
-            <Blog />
-            <Blog />
-            <Blog />
-            <Blog />
-            <Blog />
-            <Blog />
-            <Blog />
-            <Blog />
-        </div>
+  return (
+    <div className="AllBlogsList">
+        <div className="BlogList">
+          {blogs.map((blog, i) => {
+            return(
+              <Blog 
+                openBlogPage={() => props.openBlogPage(blog._id)}
+                key={i}
+                blog={blog}
+                bookmarks={bookmarks}/>
+            )
+          })}
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default AllBlogs;

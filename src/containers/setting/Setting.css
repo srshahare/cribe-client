@@ -1,0 +1,85 @@
+@import url('../../assets/Colors.css');
+
+.Setting{
+
+}
+
+.Setting h1{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    color: var(--textColor);
+    font-size: 4rem;
+    text-align: left;
+}
+
+.Setting .Content{
+    width: 80%;
+    margin: 2rem auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: initial;
+    box-shadow: 0 3px 4px rgba(0,0,0,.1);
+}
+
+.Setting .Content .ContentOption p{
+    text-align: left;
+    font-size: 1rem;
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+.Setting .Content .ContentOption{
+    border: 1px solid #ddd;
+    border-width: 0 1px 0 0;
+    width: 25%;
+}
+
+.Setting .Content .ContentOption p{
+    padding: 12px 1rem;
+    margin: 0;
+}
+
+.Setting .Content .ContentOption .active{
+    background: #eee;
+    border: 2px solid black;
+    border-width: 0 2px 0 0;
+}
+
+.Setting .Content .ContentOption p:hover{
+    background: #eee;
+}
+
+.Setting .Content .Container{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 450px){
+    .Setting .Content{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: initial;
+        box-shadow: 0 3px 4px rgba(0,0,0,.1);
+    }
+
+    .Setting .Content .ContentOption p{
+        margin: 0;
+        padding: 0 2rem;
+        vertical-align: middle;
+    }
+
+    .Setting .Content .ContentOption{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+    }
+
+    .Setting .Content .Container{
+        width: 100%;
+    }
+}

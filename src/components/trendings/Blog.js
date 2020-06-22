@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {useEffect} from 'react';
 import './Blog.css';
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -8,49 +8,83 @@ import Community from '../../hoc/popover/community/Community';
 import DateToolpit from '../../hoc/popover/date/DateToolpit';
 import More from '../../hoc/popover/more/More';
 
-class Blog extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
+import { convertMonth } from '../../utils/ConvertDate';
 
-    }
-  }
+const Blog = (props) => {
 
-  render() {
-    const userPop = User();
-    const commPop = Community();
-    const datePop = DateToolpit();
+    const {blog} = props;
+
+    const [creator, setCreator] = React.useState(null);
+    const [community, setCommunity] = React.useState(null);
+
+    const userPop = User(creator);
+    const commPop = Community(community);
+    const datePop = DateToolpit(blog.updatedAt);
     const morePop = More();
+
+
+    useEffect(() => {
+      fetch('https://thawing-reaches-88200.herokuapp.com/feed/blog/metainfo/'+blog._id, {
+        method: 'GET', 
+        headers: {
+          Authorization: 'Bearer ' + localStorage.getItem('token')
+        }
+      })
+      .then(res => {
+        return res.json();
+      })
+      .then(result => {
+          setCreator(result.creator);
+          setCommunity(result.community);
+      })
+    }, [blog._id])
+
     return (
       <div className="TrendingBlogs">
         <div className="Context">
-            <h3>A California Couple Design a Master Bed from Scratch</h3>
+            <h3>{blog.title}</h3>
             <div className="EndBox">
-            <div>
+                <div className="EndBoxDesktop">
+                  {creator === null || community === null?
+                  "":
                   <p>by <OverlayTrigger
                       trigger={['hover', 'focus']}
+                      delay={{ show: 1000, hide: 300 }}
                       key='bottomUser'
                       placement='bottom'
                       overlay={userPop}
                       >
-                      <span>Allison Fox </span>
+                      <span>{creator.name} </span>
                   </OverlayTrigger><span>|</span>
                   <OverlayTrigger
                       trigger={['hover', 'focus']}
+                      delay={{ show: 1000, hide: 300 }}
                       key='bottomCommunity'
                       placement='bottom'
                       overlay={commPop}
                       >
-                      <span> Cramp stories</span>
+                      <span> {community.name}</span>
                   </OverlayTrigger>
                   </p>
+                  }
                   <OverlayTrigger
                     placement="bottom"
                     delay={{ show: 250, hide: 400 }}
                     overlay={datePop}
                     >
-                    <p>May 13, 2019</p>
+                    <p>{convertMonth(blog.createdAt)}</p>
                   </OverlayTrigger>
+                </div>
+                <div className="EndBoxMobile">
+                  {creator === null || community === null?
+                  "":
+                  <p>
+                    <span>{creator.userId} </span>
+                    <span>|</span>
+                    <span> {community.name}</span>
+                  </p>
+                  }
+                  <p>{convertMonth(blog.createdAt)}</p>
                 </div>
                 <div className="OptionBox">
                   <OverlayTrigger
@@ -64,10 +98,9 @@ class Blog extends Component {
                 </div>
             </div>
         </div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg" alt="mountain"></img>
+        <img src={blog.preview} alt={blog.title}></img>
       </div>
     );
-  }
 }
 
 export default Blog;

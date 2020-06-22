@@ -1,0 +1,73 @@
+@import url('../../../assets/Colors.css');
+
+.SearchPopover{
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.05);
+    width: 250px;
+    min-height: 80vh;
+}
+
+.SearchPopover .SearchContent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: initial;
+}
+
+.popover{
+    max-width: 99%;
+}
+
+.HomeSearchContainer{
+    width: 100%;
+}
+
+.HomeSearchContainer h5{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.HomeSearchContainer h6{
+    font-weight: 400;
+    margin: 0;
+    margin-left: 8px;
+}
+
+.HomeSearchContainer p{
+    font-size: .9rem;
+    margin: 0;
+    margin-left: 8px;
+    color: var(--paraColor);
+}
+
+.HomeSearchContainer .People,
+.HomeSearchContainer .Page,
+.HomeSearchContainer .Tag{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+.HomeSearchContainer .People:hover,
+.HomeSearchContainer .Page:hover,
+.HomeSearchContainer .Tag:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+.HomeSearchContainer .People img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 8rem;
+}
+.HomeSearchContainer .Page img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 450px){
+    .SearchPopover{
+        width: 98%;
+    }
+}

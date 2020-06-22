@@ -1,5 +1,5 @@
 .FeatureFirst{
-
+ 
 }
 
 .FeatureFirst img{
@@ -13,6 +13,10 @@
     margin-top: 1rem;
     align-items: flex-end;
     justify-content: space-between;
+}
+
+.FeatureFirst .EndBoxMobile{
+    display: none;
 }
 
 .FeatureFirst .EndBox .OptionBox{
@@ -61,5 +65,11 @@
 @media only screen and (max-width: 450px){
     .FeatureFirst{
         margin-bottom: 2rem;
+    }
+    .FeatureFirst .EndBox .EndBoxDesktop{
+        display: none;
+    }
+    .FeatureFirst .EndBox .EndBoxMobile{
+        display: block;
     }
 }

@@ -1,0 +1,83 @@
+@import url('../../../assets//Colors.css');
+
+.SettingEditProfile{
+    display: flex;
+    flex-flow: column;
+    align-items: initial;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.SettingEditProfile h5{
+    color: var(--textColor);
+    font-size: 1rem;
+    min-width: 4rem;
+    margin: 0;
+    margin-right: 2rem;
+}
+
+
+.SettingEditProfile .ProfileInfo p,
+.SettingEditProfile .ProfileInfo h5{
+    margin: 0;
+    text-align: left;
+}
+
+.SettingEditProfile .InfoPara{
+    color: var(--paraColor);
+    font-size: .8rem;
+    margin-top: 8px;
+    text-align: left;
+}
+
+.SettingEditProfile .BluePara{
+    color: var(--themeColorDark);
+    text-align: left;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0;
+}
+
+.SettingEditProfile button{
+    margin-top: 1rem;
+    padding: 4px 1rem;
+    background: var(--accentColor);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+}
+
+.SettingEditProfile .InputSection{
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.SettingEditProfile .InputSection h5{
+    text-align: left;
+}
+
+.SettingEditProfile .InputSection input{
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+}
+.SettingEditProfile .InputSection textarea{
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    resize: none;
+    height: 150px;
+}
+
+@media only screen and (max-width: 450px){
+    .SettingEditProfile{
+        width: 90%;
+    }
+}

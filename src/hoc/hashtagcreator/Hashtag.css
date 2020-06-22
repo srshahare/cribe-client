@@ -116,3 +116,18 @@
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 450px){
+    .HashtagCont{
+        flex-flow: column;
+    }
+    .HashtagCont .HashtagBox{
+        width: 80%;
+        height: 50%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+}

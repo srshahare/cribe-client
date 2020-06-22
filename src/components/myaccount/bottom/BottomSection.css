@@ -1,8 +1,10 @@
 @import url('../../../assets//Colors.css');
 
 .AccountBottomSection{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
+    position: sticky;
+    top: 1rem;
 }
 
 .AccountBottomSection .Options{
@@ -30,4 +32,15 @@
 
 .AccountBottomSection hr{
     margin: 0;
+}
+
+.AccountBottomSection .Blogs{
+    margin-top: 1rem;
+    padding-left: 8px;
+}
+
+@media only screen and (max-width: 450px){
+    .AccountBottomSection{
+        width: 90%
+    }
 }

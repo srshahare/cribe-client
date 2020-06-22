@@ -1,0 +1,56 @@
+@import url('../../../../assets/Colors.css');
+
+.InterestUserItem {
+    display: flex;
+    align-items: initial;
+    margin: 1rem;
+    width: 60%;
+}
+
+.InterestUserItem img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8rem;
+}
+
+.InterestUserItem .Follow{
+    height: 2rem;
+    padding: 0 1rem;
+    border: none;
+    background: var(--accentColor);
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+.InterestUserItem .Following{
+    height: 2rem;
+    padding: 0 1rem;
+    border: 1px solid var(--accentColor);
+    background: white;
+    outline: none;
+    color: var(--accentColor);
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.InterestUserItem .Content{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.InterestUserItem .Content h5{
+    margin: 0;
+    text-align: left;
+}
+
+.InterestUserItem p{
+    margin: 0;
+    text-align: left;
+    color: var(--paraColor);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

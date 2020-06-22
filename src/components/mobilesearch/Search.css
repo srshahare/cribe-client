@@ -1,0 +1,36 @@
+.MobileSearch{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.MobileSearch input{
+    margin-top: 2rem;
+    width: 100%;
+    padding: 8px;
+    font-size: 1.1rem;
+    background: white;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+.MobileSearch .HomeSearchContainer .BlogsContainer{
+
+}
+
+.HomeSearchContainer .BlogsContainer .Blog{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+.HomeSearchContainer .BlogsContainer .Blog h6{
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.MobileSearch .HomeSearchContainer p{
+    text-align: left;
+}

@@ -2,25 +2,23 @@ import React, {Component} from 'react';
 import Blog from './Blog';
 import './Blog.css'
 
-class BlogList extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
+const BlogList = (props) => {
 
-    }
-  }
+    const {blogs} = props;
 
-  render() {
     return (
       <div className="FeatureSecondList">
           <div className="BlogList">
-            <Blog />
-            <Blog />
-            <Blog />
-        </div>
+            {blogs.map((blog, i) => {
+              return (
+                <Blog
+                  key={blog._id} 
+                  blog={blog}/>
+              )
+            })}
+          </div>
       </div>
     );
-  }
 }
 
 export default BlogList;

@@ -1,0 +1,63 @@
+@import url('../../../assets/Colors.css');
+
+.NotificationPopover{
+    border: 1px solid #eee;
+    min-width: 300px;
+    border-radius: 4px;
+    padding: 1rem 0;
+    max-height: 90vh;
+    box-shadow: 0 8px 16px rgba(0,0,0,.05);
+}
+
+.NotificationPopover .Notification{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    justify-content: space-between;
+}
+
+.NotificationPopover .Notification .Content{
+    display: flex;
+    align-items: center;
+}
+
+.NotificationPopover .Notification h6{
+    color: var(--paraColor);
+}
+
+.NotificationPopover .Notification:hover{
+    cursor: pointer;
+    background: #eee;
+}
+
+.NotificationPopover p{
+    font-size: 1rem;
+}
+
+.NotificationPopover .Notification .UserImg{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 8rem;
+    margin-right: 8px;
+}
+
+.NotificationPopover .Notification .BlogImg{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.popover{
+    max-width: 500px;
+}
+
+.NotificationPopover h5{
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 450px){
+    .NotificationPopover{
+        width: 98%;
+    }
+}

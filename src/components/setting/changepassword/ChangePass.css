@@ -1,0 +1,69 @@
+@import url('../../../assets//Colors.css');
+
+.SettingChangePass{
+    display: flex;
+    flex-flow: column;
+    align-items: initial;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.SettingChangePass h5{
+    color: var(--textColor);
+    font-size: 1rem;
+    min-width: 10rem;
+    margin: 0;
+    margin-right: 2rem;
+    text-align: left;
+}
+
+
+.SettingChangePass .ProfileInfo p,
+.SettingChangePass .ProfileInfo h5{
+    margin: 0;
+    text-align: left;
+}
+
+.SettingChangePass .BluePara{
+    color: var(--themeColorDark);
+    text-align: left;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0;
+}
+
+.SettingChangePass button{
+    margin-top: 2rem;
+    padding: 4px 1rem;
+    background: var(--accentColor);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    width: 70px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.SettingChangePass .InputSection{
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.SettingChangePass .InputSection input{
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+}
+.SettingChangePass .InputSection textarea{
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    resize: none;
+    height: 150px;
+}

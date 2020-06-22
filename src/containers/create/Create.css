@@ -1,0 +1,54 @@
+.Create{
+    width: 100%;
+}
+
+.Create .UnplashImageContainer{
+    position: fixed;
+    right: 1%;
+    width: 30%;
+    height: 500px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
+    border-radius: 4px;
+}
+
+.UnplashImageContainer .Container{
+    margin-top: 8px;
+    background: white;
+    height: 435px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.UnplashImageContainer .Container img{
+    height: 150px;
+    flex: 1px 0 0;
+    margin: 8px;
+}
+
+.Create #editorjs{
+    text-align: left;
+    min-height: 500px;
+    margin: 0 1rem;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
+    border-radius: 8px;
+    background: white;
+}
+
+.Create .codex-editor{
+    width: 100%;  
+}
+.Create .codex-editor__redactor{
+    margin-right: 0;
+}
+.Create .ce-paragraph{
+    font-size: 1.3rem;
+}
+.Create .ce-block__content{
+    max-width: 90%;
+}
+.Create .ce-toolbar__content{
+    max-width: 90%;
+}
+

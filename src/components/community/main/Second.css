@@ -1,0 +1,42 @@
+@import url('../../../assets//Colors.css');
+
+.CommunityMainSecond{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 110vh;
+}
+
+.CommunityMainSecond .MobileList{
+    display: none;
+}
+
+.CommunityMainSecond .Pager{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.CommunityMainSecond button{
+    outline: none;
+}
+
+.CommunityMainSecond h5{
+    text-align: left;
+    color: var(--textColor);
+    margin: 1rem;
+}
+
+
+@media only screen and (max-width: 450px){
+    .CommunityMainSecond{
+        margin-top: 95vh;
+    }
+
+    .CommunityMainSecond .DesktopList{
+        display: none;
+    }
+
+    .CommunityMainSecond .MobileList{
+        display: block;
+    }
+}

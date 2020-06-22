@@ -1,0 +1,18 @@
+@import url('../../../assets/Colors.css');
+
+.CommunityLandThird{
+    margin: 4rem auto;
+}
+
+.CommunityLandThird .OurCommunities{
+    background: var(--textColor);
+    height: 400px;
+}
+
+@media only screen and (max-width: 450px){
+    .CommunityLandThird h1{
+        font-size: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+}

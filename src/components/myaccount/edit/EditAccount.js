@@ -4,27 +4,48 @@ import './EditAccount.css';
 import Avatar from '@material-ui/core/Avatar';
 import { NavLink } from 'react-router-dom';
 
-const EditAccount = () => {
+const EditAccount = (props) => {
+
+    const { name, userid, bio, image, onInputChange, saveClicked, changeProfile } = props;
+    console.log(image)
     return(
         <div className="EditAccount">
             <div className="ProfileImgDiv">
-                <Avatar className="ProfileImg" alt="Remy Sharp" src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-                <p>Change Profile Photo</p>
+                <div className="ImageBox">
+                    <Avatar id="uploadUserPreview" className="ProfileImg" alt={name} src={image} />
+                    <label htmlFor="files" className="btn">Change Profile Image</label> 
+                    <input id="files" type="file" name="file" onChange={changeProfile} placeholder="Change Profile Photo"/>
+                </div>
             </div>
             <div className="AccountDetails">
                 <div className="AccountName">
-                    <input placeholder="User Name"></input>
+                    <input 
+                    placeholder="User Name"
+                    name="name"
+                    value={name}
+                    onChange={onInputChange}
+                    ></input>
                 </div>
                 <p><span> 432 </span>Blogs&nbsp;&nbsp;&nbsp;&nbsp;
                     <span> 42 </span>followers&nbsp;&nbsp;&nbsp;&nbsp;
                     <span> 34 </span>followings
                 </p>
-                <input placeholder="User Id"></input>
+                <input 
+                    placeholder="User Id"
+                    name="userid"
+                    value={userid}
+                    onChange={onInputChange}
+                    ></input>
                 <h6 className="JoiningText">Member of Cribe since June 2019</h6>
-                <textarea placeholder="Your bio"></textarea>
+                <textarea 
+                    placeholder="Your bio"
+                    name="bio"
+                    value={bio}
+                    onChange={onInputChange}
+                    ></textarea>
                 <div>
-                    <button>Save Profile</button>
-                    <NavLink to="/account">Cancel</NavLink>
+                    <button onClick={saveClicked}>Save Profile</button>
+                    <button><NavLink to="/cribe-client/account">Cancel</NavLink></button>
                 </div>
             </div>
         </div>

@@ -20,15 +20,21 @@ const Signup = (props) => {
           <div className="InputContainer">
               <div className="UserNameInput">
                   <AccountCircleIcon className="AccountIcon" style={{color: "#D1D1D1"}}/>
-                  <input placeholder="User Name"/>
+                  <input placeholder="User Name"
+                    name="username"
+                    onChange={props.onInputChange}/>
               </div>
               <div className="EmailInput">
                   <EmailIcon className="AccountIcon" style={{color: "#D1D1D1"}}/>
-                  <input placeholder="Email Address"/>
+                  <input placeholder="Email Address"
+                    name="email"
+                    onChange={props.onInputChange}/>
               </div>
               <div className="PassInput">
                   <VpnKeyIcon className="KeyIcon" style={{color: "#D1D1D1"}}/>
-                  <input placeholder="Password"/>
+                  <input placeholder="Password"
+                    name="password"
+                    onChange={props.onInputChange}/>
               </div>
               <div className="CheckContainer">
                   <FormControlLabel
@@ -44,7 +50,7 @@ const Signup = (props) => {
                       style={{color: '#929699', fontWeight: '300'}}
                       label="Remember me"
                   />
-                  <button className="SignupBtn">SIGNUP</button>
+                  <button className="SignupBtn" onClick={props.signUpHandler}>SIGNUP</button>
               </div>
               <div className="ForgotContainer">
                   <p className="RegisterPara" onClick={props.jumpLoginClicked}>Login now</p>

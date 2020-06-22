@@ -1,10 +1,11 @@
 @import url('../../../assets//Colors.css');
 
 .PageBottomBox{
-    margin: 2rem 8rem;
+    margin: 2rem 10%;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 8px;
+    width: 53%;
 }
 .PageBottomBox p{
     text-align: left;
@@ -38,8 +39,8 @@
 }
 
 .PageBottomBox .FirstSection button{
-    padding: 8px 2rem;
-    width: 60%;
+    padding: 4px 2rem;
+    width: 30%;
     font-size: 1rem;
     outline: none;
     border: none;
@@ -50,8 +51,8 @@
 }
 
 .PageBottomBox .FirstSection img{
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     padding: 8px;
 }
 
@@ -62,8 +63,8 @@
 }
 
 .PageBottomBox .FirstSection .OptionBox img{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     margin: 0 4px;
     padding: 0;
 }
@@ -73,7 +74,30 @@
     align-items: center;
     justify-content: space-between;
     padding: 8px;
-    width: 70%;
+    width: 100%;
+}
+
+.PageBottomBox .SecondSection .Follow,
+.PageBottomBox .ThirdSection .Follow{
+    height: 2rem;
+    padding: 0 1rem;
+    border: none;
+    background: var(--accentColor);
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+.PageBottomBox .SecondSection .Following,
+.PageBottomBox .ThirdSection .Following{
+    height: 2rem;
+    padding: 0 1rem;
+    border: 1px solid var(--accentColor);
+    background: white;
+    outline: none;
+    color: var(--accentColor);
+    border-radius: 4px;
+    margin-top: 8px;
 }
 
 .PageBottomBox .SecondSection h3,
@@ -111,7 +135,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 8px;
-    width: 70%;
+    width: 100%;
 }
 
 .PageBottomBox .ThirdSection h3,

@@ -1,8 +1,30 @@
 @import url('../../../assets//Colors.css');
 
 .BlogPageContent{
-    margin: 0 8rem;
+    width: 80%;
+    margin: 0 auto;
     margin-top: 300px;
+}
+
+.BlogPageContent .BlogContent h1,
+.BlogPageContent .BlogContent h2,
+.BlogPageContent .BlogContent h3,
+.BlogPageContent .BlogContent h4,
+.BlogPageContent .BlogContent h5,
+.BlogPageContent .BlogContent h6{
+    text-align: left;
+}
+
+.BlogPageContent .BlogContent img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.BlogPageContent .BlogContent iframe{
+    margin: 2rem 0;
+    border: none;
+    width: 100%;
 }
 
 .BlogPageContent .BlogContent p{
@@ -11,9 +33,100 @@
     font-size: 1.2rem;
     color: var(--textColor);
     line-height: 2rem;
+    font-weight: 350;
+}
+
+.BlogPageContent .BlogContent li{
+    font-size: 1.2rem;
+    text-align: left;
+    color: var(--textColor);
+    line-height: 2rem;
+    margin: 1rem 0;
+    font-weight: 350;
+}
+
+.BlogPageContent .BlogContent img{
+    width: 100%;
 }
 
 .BlogPageContent h3{
     text-align: left;
     color: var(--textColor);
+}
+
+.BlogPageContent .SecondSection{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.BlogPageContent .SecondSection .Follow,
+.BlogPageContent .ThirdSection .Follow{
+    height: 2rem;
+    padding: 0 1rem;
+    border: none;
+    background: var(--accentColor);
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+.BlogPageContent .SecondSection .Following,
+.BlogPageContent .ThirdSection .Following{
+    height: 2rem;
+    padding: 0 1rem;
+    border: 1px solid var(--accentColor);
+    background: white;
+    outline: none;
+    color: var(--accentColor);
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.BlogPageContent .SecondSection h3,
+.BlogPageContent .SecondSection p{
+    text-align: left;
+    margin: 0;
+    color: var(--paraColor);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 0;
+}
+
+.BlogPageContent .SecondSection h3{
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.BlogPageContent .SecondSection img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8rem;
+}
+
+.BlogPageContent .SecondSection .CreatorInfo{
+    margin: 0 1rem;
+    width: 100%;
+}
+
+.BlogPageContent .SecondSection .OptionBox{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.BlogPageContent .SecondSection .OptionBox img{
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    padding: 0;
 }

@@ -1,47 +1,88 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './PageNav.css'
 import Brand from '../../../assets/images/brand.jpg';
 import NotiIcon from '../../../assets/images/notification.png';
 
-import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import Avatar from '@material-ui/core/Avatar';
+import Search from '../../../hoc/popover/search/Search';
+import {OverlayTrigger} from 'react-bootstrap';
+import Profile from '../../../hoc/popover/profile/Profile';
+import Notification from '../../../hoc/popover/notification/Notification';
 
-const PageNav = () => {
+import {useHistory} from 'react-router-dom';
 
-    const showDropMenu = () => {
-        document.getElementById("myDropdown").classList.toggle("show");
+
+const PageNav = (props) => {
+    const history = useHistory();
+    const profilePop = Profile({
+        onLogout: props.onLogout, 
+        profile: props.profile, 
+        selectHashtag: props.openHashtagPage,
+        communityClicked: props.communityClicked
+        });
+    const [search, setSearch] = useState('');
+    const notificationPop = Notification();
+    const searchPop = Search(search);
+
+    const jumpToHome = () => {
+        history.push('/cribe-client/')
     }
 
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-    }
-
-    const handlePopover = () => {
-        console.log('cliekc')
+    const searchInputChange = (e) => {
+        const value = e.target.value;
+        setSearch(value)
     }
 
     return(
         <div className="PageNav">
             <div className="NavContext">
-                <img src={Brand} alt="brand logo"></img>
+                <img onClick={jumpToHome} src={Brand} alt="brand logo"></img>
                 <div id="myDropdown" className="ItemsContainer">
-                    <img src={NotiIcon} alt="notification icon" className="NotiIcon"></img>
-                    <Avatar onClick={handlePopover} className="Profile">S</Avatar>
-                    <input className="SearchBox" placeholder='Search'></input>
+                    <OverlayTrigger
+                        trigger="click"
+                        key='bottomnotification'
+                        placement='bottom'
+                        overlay={notificationPop}
+                        >
+                        <img src={NotiIcon} alt="notification icon" className="NotiIcon"></img>
+                    </OverlayTrigger>
+                    <OverlayTrigger
+                        trigger="click"
+                        key='bottomprofile'
+                        placement='bottom'
+                        overlay={profilePop}
+                        >
+                        <Avatar className="Profile">S</Avatar>
+                    </OverlayTrigger>
+                    <OverlayTrigger
+                        trigger="focus"
+                        key='bottomsearch'
+                        placement='bottom'
+                        overlay={searchPop}
+                        >
+                        <input onChange={searchInputChange} className="SearchBox" placeholder='Search'></input>
+                    </OverlayTrigger>
                     <SearchIcon className="SearchIcon" color="action"/>
                 </div>
-                <div className="dropbtn">
-                    <MenuIcon onClick={showDropMenu} />
+                <div id="myDropdown" className="ItemsContainerMobile">
+                    <SearchIcon className="SearchIcon" color="action"/>
+                    <OverlayTrigger
+                        trigger="click"
+                        key='bottomnotification'
+                        placement='bottom'
+                        overlay={notificationPop}
+                        >
+                        <img src={NotiIcon} alt="notification icon" className="NotiIcon"></img>
+                    </OverlayTrigger>
+                    <OverlayTrigger
+                        trigger="click"
+                        key='bottomprofile'
+                        placement='bottom'
+                        overlay={profilePop}
+                        >
+                        <Avatar className="Profile">S</Avatar>
+                    </OverlayTrigger>
                 </div>
             </div>
         </div>

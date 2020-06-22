@@ -1,9 +1,10 @@
 .PopularBlogs{
     margin: 8px;
+    height: 100%;
 }
 
 .PopularBlogs img{
-    height: 150px;
+    height: 200px;
     width: 100%;
     object-fit: cover;
 }
@@ -15,6 +16,10 @@
     justify-content: space-between;
 }
 
+.PopularBlogs .EndBox .EndBoxMobile{
+    display: none;
+}
+
 .PopularBlogs .EndBox .OptionBox{
     display: flex;
     align-items: center;
@@ -22,6 +27,7 @@
 
 .PopularBlogs .Context {
     margin-top: 8px;
+    height: 85px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -68,8 +74,8 @@
 bloglist css */
 .PopularBlogsList{
     margin-top: 4rem;
-
 }
+
 .PopularBlogsList .PopularList{
     display: flex;
 }
@@ -85,6 +91,7 @@ bloglist css */
         margin-top: 0;
         margin-right: 8px;
     }
+    
     .PopularBlogsList h4{
         margin: 0;
         padding: 8px;
@@ -95,11 +102,16 @@ bloglist css */
     }
 
     .PopularBlogs img{
-        height: 150px;
-        width: 200px;
+        height: 200px;
+        width: 100%;
         object-fit: cover;
     }
-
+    .PopularBlogs .EndBox .EndBoxDesktop{
+        display: none;
+    }
+    .PopularBlogs .EndBox .EndBoxMobile{
+        display: block;
+    }
     .PopularList::-webkit-scrollbar{
         display: none;
     }

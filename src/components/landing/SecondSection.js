@@ -6,7 +6,7 @@ const SecondSection = () => {
         <div className="LandingComp">
             <div className="SecondSection">
                 <h1>How this all works?</h1>
-                <div class='warn'></div>
+                <div className='warn'></div>
                 <div className="Items">
                     <div className="Item">
                         <div className="One">1</div>
