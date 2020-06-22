@@ -88,26 +88,27 @@ const Login = (props) => {
                   <div className="row"></div>
               </div>
               <div className="AuthOptionsContainer">
-                  <div>
-                    <FacebookLogin 
+                  <div className="FacebookLogin">
+                    {/* <FacebookLogin 
                         
-                    />
-                      {/* <img src={Facebook} alt="facebook icon"></img>
-                      <p>LOGIN WITH FACEBOOK</p> */}
+                    /> */}
+                      <img src={Facebook} alt="facebook icon"></img>
+                      <p>LOGIN WITH FACEBOOK</p>
                   </div>
                   <div className="TwitterLogin">
                       <img src={Twitter} alt="twitter icon"></img>
                       <p>LOGIN WITH TWITTER</p>
                   </div>
-                  <div>
-                      {/* <img src={Google} alt="google icon"></img> */}
-                    <GoogleLogin 
+                  <div className="GoogleLogin">
+                      <img src={Google} alt="google icon"></img>
+                      <p>LOGIN WITH GOOGLE</p>
+                    {/* <GoogleLogin 
                         clientId="315283119800-nh5uvpln740lhmj1kd49jhf309q9bkpi.apps.googleusercontent.com"
                         buttonText="Sign In with Google"
                         onSuccess={responseGoogle}
                         onFailure={responseGoogle}
                         className="GoogleLogin"
-                    />
+                    /> */}
                   </div>
               </div>
           </div>

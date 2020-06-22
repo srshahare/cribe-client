@@ -224,3 +224,14 @@
         transform: scale(1);
     }
 }
+
+
+@media only screen and (max-width: 450px) {
+    .SignupComponent{
+        flex-flow: column-reverse;
+    }
+
+    .SignupComponent .InputContainer{
+        width: 90%;
+    }
+}

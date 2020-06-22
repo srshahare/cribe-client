@@ -217,3 +217,14 @@
         transform: scale(1);
     }
 }
+
+
+@media only screen and (max-width: 450px) {
+    .LoginComponent{
+        flex-flow: column-reverse;
+    }
+
+    .LoginComponent .InputContainer{
+        width: 90%;
+    }
+}
