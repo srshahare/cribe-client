@@ -99,7 +99,7 @@ class Home extends Component {
         }
       }).then(res => res.json()),
 
-      fetch('https://thawing-reaches-88200.herokuapp.com/trending', {
+      fetch('https://thawing-reaches-88200.herokuapp.com/feed/trending', {
         method: 'GET',
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token')
